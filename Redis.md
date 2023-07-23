@@ -25,13 +25,13 @@
 
 **那么，所谓的Redis知识全景图都包括什么呢？简单来说，就是“两大维度，三大主线”。**
 
-<img src="images/79da7093ed998a99d9abe91e610b74e7.jpg" alt="img" style="zoom: 33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/79da7093ed998a99d9abe91e610b74e7.jpg" alt="img" style="zoom: 33%;" />
 
 “两大维度”就是指系统维度和应用维度，“三大主线”也就是指高性能、高可靠和高可扩展（可以简称为“三高”）。
 
-首先，从系统维度上说，你需要了解Redis的各项关键技术的设计原理，这些能够为你判断和推理问题打下坚实的基础，而且，你还能从中掌握一些优雅的系统设计规范，例如run-to-complete模型、epoll网络模型，这些可以应用到你后续的系统开发实践中。
+首先，从系统维度上说，你需要了解Redis的各项关键技术的设计原理，这些能够为你判断和推理问题打下坚实的基础，而且，你还能从中掌握一些优雅的系统设计规范，例如run-to-complete模型、epoll网络模型，这些可以应用到你后续的系统开发实践中；
 
-这里有一个问题是，Redis作为庞大的键值数据库，可以说遍地都是知识，一抓一大把，我们怎么能快速地知道该学哪些呢？别急，接下来就要看“三大主线”的魔力了。
+这里有一个问题是，Redis作为庞大的键值数据库，可以说遍地都是知识，一抓一大把，我们怎么能快速地知道该学哪些呢？别急，接下来就要看“三大主线”的魔力了；
 
 **别看技术点是零碎的，其实你完全可以按照这三大主线，给它们分下类，就像图片中展示的那样，具体如下：**
 
@@ -53,7 +53,7 @@
 
 最后，我还想跟你分享一个非常好用的技巧。我梳理了一下这些年遇到的、看到的Redis各大典型问题，同时结合相关的技术点，手绘了一张Redis的问题画像图。无论你遇见什么问题，都可以拿出来这张图，这样你就能快速地按照问题来查找对应的Redis主线模块了，然后再进一步定位到相应的技术点上。
 
-<img src="images/70a5bc1ddc9e3579a2fcb8a5d44118b4.jpeg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/70a5bc1ddc9e3579a2fcb8a5d44118b4.jpeg" alt="img" style="zoom: 25%;" />
 
 举个例子，如果你遇到了Redis的响应变慢问题，对照着这张图，你就可以发现，这个问题和Redis的性能主线相关，而性能主线又和数据结构、异步机制、RDB、AOF重写相关。找到了影响的因素，解决起来也就很容易了。
 
@@ -79,7 +79,7 @@
 
 Redis 6.0刚刚推出，增加了万众瞩目的多线程等新特性，因此，我会向你介绍这些新特性，以及当前业界对Redis的最新探索，这会让你拥有前瞻性视角，了解Redis的发展路线图，为未来的发展提前做好准备。凡事预则立，这样一来，你就可以走在很多人的前面。
 
-<img src="images/bfc3303953772061491398yycd35d021.jpg" alt="img" style="zoom: 50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/bfc3303953772061491398yycd35d021.jpg" alt="img" style="zoom: 50%;" />
 
 
 
@@ -158,7 +158,7 @@ SimpleKV也不例外：在SimpleKV中，key是String类型，而value是基本�
 
 大体来说，一个键值数据库包括了 **访问框架、索引模块、操作模块和存储模块** 四部分（见下图）。接下来，我们就从这四个部分入手，继续构建我们的SimpleKV。
 
-<img src="images/ec18bf4b8afef2fa8b99af252d95a2d5.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/ec18bf4b8afef2fa8b99af252d95a2d5.jpg" alt="img" style="zoom: 25%;" />
 
 ### 1.1.5 访问框架：采用什么访问模式？
 
@@ -246,7 +246,7 @@ SimpleKV包含了一个键值数据库的基本组件，对这些组件有了了
 
 为了支持更加丰富的业务场景，Redis对这些组件或者功能进行了扩展，或者说是进行了精细优化，从而满足了功能和性能等方面的要求。
 
-![img](images/30e0e0eb0b475e6082dd14e63c13ed44.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/30e0e0eb0b475e6082dd14e63c13ed44.jpg)
 
 从这张对比图中，我们可以看到，从SimpleKV演进到Redis，有以下几个重要变化：
 
@@ -273,7 +273,7 @@ SimpleKV包含了一个键值数据库的基本组件，对这些组件有了了
 
 我也给个答案总结。还记得我在开篇词讲过的“两大维度”“三大主线”吗？这里我们也可以借助这个框架进行分析，如下表所示。此外，在表格最后，我还从键值数据库开发和运维的辅助工具上，对 SimpleKV 和 Redis 做了对比。
 
-<img src="images/67e77bea2568a4f0997c1853d9c60036.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/67e77bea2568a4f0997c1853d9c60036.jpg" alt="img" style="zoom: 25%;" />
 
 
 
@@ -293,7 +293,7 @@ SimpleKV包含了一个键值数据库的基本组件，对这些组件有了了
 
 简单来说，底层数据结构一共有6种，分别是**简单动态字符串、双向链表、压缩列表、哈希表、跳表和整数数组**。它们和数据类型的对应关系如下图所示：
 
-![img](images/8219f7yy651e566d47cc9f661b399f01.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/8219f7yy651e566d47cc9f661b399f01.jpg)
 
 - 可以看到，String类型的底层实现只有一种数据结构，也就是简单动态字符串。
 
@@ -321,7 +321,7 @@ SimpleKV包含了一个键值数据库的基本组件，对这些组件有了了
 
 在下图中，可以看到，哈希桶中的entry元素中保存了`*key`和`*value`指针，分别指向了实际的键和值，这样一来，即使值是一个集合，也可以通过`*value`指针被查找到。
 
-<img src="images/1cc8eaed5d1ca4e3cdbaa5a3d48dfb5f.jpg" alt="img" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/1cc8eaed5d1ca4e3cdbaa5a3d48dfb5f.jpg" alt="img" style="zoom:50%;" />
 
 **因为这个哈希表保存了所有的键值对，所以，我也把它称为全局哈希表**。哈希表的最大好处很明显，就是让我们可以用O(1)的时间复杂度来快速查找到键值对——我们只需要计算键的哈希值，就可以知道它所对应的哈希桶位置，然后就可以访问相应的entry元素。
 
@@ -337,7 +337,7 @@ SimpleKV包含了一个键值数据库的基本组件，对这些组件有了了
 
 如下图所示：entry1、entry2和entry3都需要保存在哈希桶3中，导致了哈希冲突。此时，entry1元素会通过一个`*next`指针指向entry2，同样，entry2也会通过`*next`指针指向entry3。这样一来，即使哈希桶3中的元素有100个，我们也可以通过entry元素中的指针，把它们连起来。这就形成了一个链表，也叫作哈希冲突链。
 
-<img src="images/8ac4cc6cf94968a502161f85d072e428.jpg" alt="img" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/8ac4cc6cf94968a502161f85d072e428.jpg" alt="img" style="zoom:50%;" />
 
 但是，这里依然存在一个问题，哈希冲突链上的元素只能通过指针逐一查找再操作。对于追求“快”的Redis来说，这是不太能接受的。
 
@@ -359,7 +359,7 @@ SimpleKV包含了一个键值数据库的基本组件，对这些组件有了了
 
 简单来说就是在第二步拷贝数据时，Redis仍然正常处理客户端请求，每处理一个请求时，从哈希表1中的第一个索引位置开始，顺带着将这个索引位置上的所有entries拷贝到哈希表2中；等处理下一个请求时，再顺带拷贝哈希表1中的下一个索引位置的entries。如下图所示：
 
-<img src="images/73fb212d0b0928d96a0d7d6ayy76da0c.jpg" alt="img" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/73fb212d0b0928d96a0d7d6ayy76da0c.jpg" alt="img" style="zoom:50%;" />
 
 这样就巧妙地把一次性大量拷贝的开销，分摊到了多次处理请求的过程中，避免了耗时操作，保证了数据的快速访问。
 
@@ -392,7 +392,7 @@ SimpleKV包含了一个键值数据库的基本组件，对这些组件有了了
 
 - **压缩列表实际上类似于一个数组**，数组中的每一个元素都对应保存一个数据。和数组不同的是，压缩列表在表头有三个字段zlbytes、zltail和zllen，分别表示列表长度、列表尾的偏移量和列表中的entry个数；压缩列表在表尾还有一个zlend，表示列表结束。
 
-  <img src="images/9587e483f6ea82f560ff10484aaca4a0.jpg" alt="img" style="zoom:50%;" />
+  <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/9587e483f6ea82f560ff10484aaca4a0.jpg" alt="img" style="zoom:50%;" />
 
   在压缩列表中，如果我们要查找定位第一个元素和最后一个元素，可以通过表头三个字段的长度直接定位，**复杂度是O(1)**。而查找其他元素时，就没有这么高效了，只能逐个查找，此时的**复杂度就是O(N)了**。
 
@@ -400,7 +400,7 @@ SimpleKV包含了一个键值数据库的基本组件，对这些组件有了了
 
   具体来说，跳表在链表的基础上，增加了多级索引，通过索引位置的几个跳转，实现数据的快速定位，如下图所示：
 
-  <img src="images/1eca7135d38de2yy16681c2bbc4f3fb4.jpg" alt="img" style="zoom:50%;" />
+  <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/1eca7135d38de2yy16681c2bbc4f3fb4.jpg" alt="img" style="zoom:50%;" />
 
   如果我们要在链表中查找33这个元素，只能从头开始遍历链表，查找6次，直到找到33为止。此时，**复杂度是O(N)**，查找效率很低。
 
@@ -414,7 +414,7 @@ SimpleKV包含了一个键值数据库的基本组件，对这些组件有了了
 
 好了，我们现在可以按照==查找的时间复杂度==给这些数据结构分下类了：
 
-<img src="images/fb7e3612ddee8a0ea49b7c40673a0cf0.jpg" alt="img" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/fb7e3612ddee8a0ea49b7c40673a0cf0.jpg" alt="img" style="zoom:50%;" />
 
 #### 2. 不同操作的复杂度
 
@@ -485,7 +485,7 @@ Redis 之所以采用不同的数据结构，其实是在性能和内存使用�
 
 说到日志，我们比较熟悉的是数据库的**写前日志（Write Ahead Log, WAL）**，也就是说，在实际写数据前，先把修改的数据记到日志文件中，以便故障时进行恢复。不过，**AOF日志正好相反，它是写后日志**，“写后”的意思是Redis是先执行命令，把数据写入内存，然后才记录日志，如下图所示：
 
-<img src="images/407f2686083afc37351cfd9107319a1f.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/407f2686083afc37351cfd9107319a1f.jpg" alt="img" style="zoom: 25%;" />
 
 ==那AOF为什么要先执行命令再记日志呢？==要回答这个问题，我们要先知道AOF里记录了什么内容。
 
@@ -493,7 +493,7 @@ Redis 之所以采用不同的数据结构，其实是在性能和内存使用�
 
 我们以Redis收到“set testkey testvalue”命令后记录的日志为例，看看AOF日志的内容。其中，“`*3`”表示当前命令有三个部分，每部分都是由“`$+数字`”开头，后面紧跟着具体的命令、键或值。这里，“数字”表示这部分中的命令、键或值一共有多少字节。例如，“`$3 set`”表示这部分有3个字节，也就是“set”命令。
 
-<img src="images/4d120bee623642e75fdf1c0700623a9f.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/4d120bee623642e75fdf1c0700623a9f.jpg" alt="img" style="zoom:25%;" />
 
 **但是，为了避免额外的检查开销，Redis在向AOF里面记录日志的时候，并不会先去对这些命令进行语法检查**。所以，如果先记日志再执行命令的话，日志中就有可能记录了错误的命令，Redis在使用日志恢复数据时，就可能会出错。
 
@@ -525,7 +525,7 @@ Redis 之所以采用不同的数据结构，其实是在性能和内存使用�
 
 我把这三种策略的写回时机，以及优缺点汇总在了一张表格里，以方便你随时查看。
 
-<img src="images/72f547f18dbac788c7d11yy167d7ebf8.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/72f547f18dbac788c7d11yy167d7ebf8.jpg" alt="img" style="zoom: 25%;" />
 
 到这里，我们就可以根据系统对高性能和高可靠性的要求，来选择使用哪种写回策略了。
 
@@ -557,7 +557,7 @@ Redis 之所以采用不同的数据结构，其实是在性能和内存使用�
 
 下面这张图就是一个例子：
 
-<img src="images/6528c699fdcf40b404af57040bb8d208.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/6528c699fdcf40b404af57040bb8d208.jpg" alt="img" style="zoom: 25%;" />
 
 不过，虽然AOF重写后，日志文件会缩小，**但是，**要把整个数据库的最新数据的操作日志都写回磁盘，仍然是一个非常耗时的过程。
 
@@ -581,7 +581,7 @@ Redis 之所以采用不同的数据结构，其实是在性能和内存使用�
   
   等到拷贝数据的所有操作记录重写完成后，重写日志记录的这些最新操作也会写入新的AOF文件，以保证数据库最新状态的记录。此时，我们就可以用新的AOF文件替代旧文件了。
 
-<img src="images/6b054eb1aed0734bd81ddab9a31d0be8.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/6b054eb1aed0734bd81ddab9a31d0be8.jpg" alt="img" style="zoom:25%;" />
 
 总结来说，每次AOF重写时，Redis会先执行一个内存拷贝，用于重写；然后，使用两个日志保证在重写过程中，新写入的数据不会丢失。而且，因为Redis采用额外的线程进行数据重写，所以，这个过程并不会阻塞主线程。
 
@@ -674,7 +674,7 @@ Redis的数据都在内存中，为了提供所有数据的可靠性保证，它
 - 简单来说，bgsave子进程是由主线程fork生成的，可以共享主线程的所有内存数据。bgsave子进程运行后，开始读取主线程的内存数据，并把它们写入RDB文件。
 - 此时，如果主线程对这些数据也都是读操作（例如图中的键值对A），那么，主线程和bgsave子进程相互不影响。但是，如果主线程要修改一块数据（例如图中的键值对C），那么，**这块数据就会被复制一份，生成该数据的副本**。然后，bgsave子进程会把这个副本数据写入RDB文件，而在这个过程中，主线程仍然可以直接修改原来的数据。
 
-<img src="images/4dc5fb99a1c94f70957cce1ffef419cc.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/4dc5fb99a1c94f70957cce1ffef419cc.jpg" alt="img" style="zoom:25%;" />
 
 这既保证了快照的完整性，也允许主线程同时对数据进行修改，避免了对正常业务的影响。
 
@@ -701,7 +701,7 @@ Redis的数据都在内存中，为了提供所有数据的可靠性保证，它
 
 在第一次做完全量快照后，T1和T2时刻如果再做快照，我们只需要将被修改的数据写入快照文件就行。但是，这么做的前提是，**我们需要记住哪些数据被修改了**。你可不要小瞧这个“记住”功能，它需要我们**使用额外的元数据信息去记录哪些数据被修改了**，这会**带来额外的空间开销问题**。如下图所示：
 
-<img src="images/8a1d515269cd23595ee1813e8dff28a5.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/8a1d515269cd23595ee1813e8dff28a5.jpg" alt="img" style="zoom:25%;" />
 
 如果我们对每一个键值对的修改，都做个记录，那么，如果有1万个被修改的键值对，我们就需要有1万条额外的记录。而且，有的时候，键值对非常小，比如只有32字节，而记录它被修改的元数据信息，可能就需要8字节，这样的画，为了“记住”修改，引入的额外空间开销比较大。这对于内存资源宝贵的Redis来说，有些得不偿失。
 
@@ -715,7 +715,7 @@ Redis 4.0中提出了一个**混合使用AOF日志和内存快照**的方法。�
 
 > ​	如下图所示，T1和T2时刻的修改，用AOF日志记录，等到第二次做全量快照时，就可以清空AOF日志，因为此时的修改都已经记录到快照中了，恢复时就不再用日志了。
 >
-> <img src="images/e4c5846616c19fe03dbf528437beb320.jpg" alt="内存快照和AOF混合使用" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/e4c5846616c19fe03dbf528437beb320.jpg" alt="内存快照和AOF混合使用" style="zoom:25%;" />
 
 这个方法既能享受到RDB文件快速恢复的好处，又能享受到AOF只记录操作命令的简单优势，颇有点“鱼和熊掌可以兼得”的感觉，**建议在实践中用起来**。
 
@@ -765,7 +765,7 @@ Redis 4.0中提出了一个**混合使用AOF日志和内存快照**的方法。�
 - **读操作**：主库、从库都可以接收；
 - **写操作**：首先到主库执行，然后，主库将写操作同步给从库。
 
-<img src="images/809d6707404731f7e493b832aa573a2f.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/809d6707404731f7e493b832aa573a2f.jpg" alt="img" style="zoom:25%;" />
 
 > ​	那么，为什么要采用读写分离的方式呢？
 >
@@ -793,7 +793,7 @@ replicaof  172.16.19.3  6379
 
 接下来，我们就要学习主从库间数据第一次同步的三个阶段了。你可以先看一下下面这张图，有个整体感知，接下来我再具体介绍。
 
-<img src="images/63d18fd41efc9635e7e9105ce1c33da1.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/63d18fd41efc9635e7e9105ce1c33da1.jpg" alt="img" style="zoom:25%;" />
 
 ==第一阶段==是主从库间建立连接、协商同步的过程，主要是为全量复制做准备。在这一步，**从库和主库建立起连接，并告诉主库即将进行同步，主库确认回复后，主从库间就可以开始同步了**。
 
@@ -834,7 +834,7 @@ replicaof  所选从库的IP 6379
 
 这样一来，这些从库就会知道，在进行同步时，不用再和主库进行交互了，只要和级联的从库进行写操作同步就行了，这就可以减轻主库上的压力，如下图所示：
 
-<img src="images/403c2ab725dca8d44439f8994959af45.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/403c2ab725dca8d44439f8994959af45.jpg" alt="img" style="zoom:25%;" />
 
 好了，到这里，我们了解了主从库间通过全量复制实现数据同步的过程，以及通过“主-从-从”模式分担主库压力的方式。
 
@@ -860,7 +860,7 @@ repl_backlog_buffer是一个环形缓冲区，**主库会记录自己写到的�
 
 **同样，从库在复制完写操作命令后**，它在缓冲区中的读位置也开始逐步偏移刚才的起始位置，此时，从库已复制的偏移量slave_repl_offset也在不断增加。正常情况下，这两个偏移量基本相等。
 
-<img src="images/13f26570a1b90549e6171ea24554b737.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/13f26570a1b90549e6171ea24554b737.jpg" alt="img" style="zoom:25%;" />
 
 - 主从库的连接恢复之后，从库首先会给主库发送psync命令，并把自己当前的slave_repl_offset发给主库，主库会判断自己的master_repl_offset和slave_repl_offset之间的差距。
 - 在网络断连阶段，主库可能会收到新的写操作命令，所以，一般来说，master_repl_offset会大于slave_repl_offset。此时，主库只用把master_repl_offset和slave_repl_offset之间的命令操作同步给从库就行。
@@ -868,7 +868,7 @@ repl_backlog_buffer是一个环形缓冲区，**主库会记录自己写到的�
 
 说到这里，我们再借助一张图，回顾下增量复制的流程。
 
-<img src="images/20e233bd30c3dacb0221yy0c77780b16.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/20e233bd30c3dacb0221yy0c77780b16.jpg" alt="img" style="zoom:25%;" />
 
 不过，有一个地方我要强调一下，因为==repl_backlog_buffer是一个环形缓冲区==，所以在缓冲区写满后，主库会继续写入，此时，就会覆盖掉之前写入的操作。**如果从库的读取速度比较慢，就有可能导致从库还未读取的操作被主库新写的操作覆盖了，这会导致主从库间的数据不一致**。
 
@@ -936,7 +936,7 @@ repl_backlog_buffer是一个环形缓冲区，**主库会记录自己写到的�
 
 我画了一张图片，展示了这三个任务以及它们各自的目标。
 
-<img src="images/efcfa517d0f09d057be7da32a84cf2a1.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/efcfa517d0f09d057be7da32a84cf2a1.jpg" alt="img" style="zoom:25%;" />
 
 在这三个任务中，通知任务相对来说比较简单，哨兵只需要把新主库信息发给从库和客户端，让它们和新主库建立连接就行，并不涉及决策的逻辑。
 
@@ -969,7 +969,7 @@ repl_backlog_buffer是一个环形缓冲区，**主库会记录自己写到的�
 
 > ​	在判断主库是否下线时，不能由一个哨兵说了算，只有大多数的哨兵实例，都判断主库已经“主观下线”了，主库才会被标记为“客观下线”，这个叫法也是表明主库下线成为一个客观事实了。这个判断原则就是：少数服从多数。同时，这会进一步触发哨兵开始主从切换流程。
 >
-> <img src="images/1945703abf16ee14e2f7559873e4e60d.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/1945703abf16ee14e2f7559873e4e60d.jpg" alt="img" style="zoom:25%;" />
 
 简单来说，“客观下线”的标准就是，当有N个哨兵实例时，最好要有**N/2 + 1**个实例判断主库为“主观下线”，才能最终判定主库为“客观下线”。
 
@@ -981,7 +981,7 @@ repl_backlog_buffer是一个环形缓冲区，**主库会记录自己写到的�
 
 简单来说，我们在多个从库中，先按照**一定的筛选条件**，把不符合条件的从库去掉。然后，我们再按照**一定的规则**，给剩下的从库逐个打分，将得分最高的从库选为新主库，如下图所示：
 
-<img src="images/f2e9b8830db46d959daa6a39fbf4a14c.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f2e9b8830db46d959daa6a39fbf4a14c.jpg" alt="img" style="zoom:25%;" />
 
 首先来看==筛选的条件==。
 
@@ -1084,7 +1084,7 @@ sentinel monitor <master-name> <ip> <redis-port> <quorum>
 
 > ​	我来举个例子，具体说明一下。在下图中，哨兵 1 把自己的 IP（172.16.19.3）和端口（26579）发布到**“sentinel:hello”**频道上，哨兵 2 和 3 订阅了该频道。那么此时，哨兵 2 和 3 就可以从这个频道直接获取哨兵 1 的 IP 地址和端口号。 然后，哨兵 2、3 可以和哨兵 1 建立网络连接。通过这个方式，哨兵 2 和 3 也可以建立网络连接，这样一来，哨兵集群就形成了。它们相互间可以通过网络连接进行通信，比如说对主库有没有下线这件事儿进行判断和协商。
 >
-> <img src="images/ca42698128aa4c8a374efbc575ea22b1.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/ca42698128aa4c8a374efbc575ea22b1.jpg" alt="img" style="zoom:25%;" />
 
 ==哨兵除了彼此之间建立起连接形成集群外，还需要和从库建立连接==。这是因为，在哨兵的监控任务中，它需要对主从库都进行心跳判断，而且在主从库切换完成后，==它还需要通知从库，让它们和新主库进行同步。==
 
@@ -1092,7 +1092,7 @@ sentinel monitor <master-name> <ip> <redis-port> <quorum>
 
 这是由**哨兵向主库发送 INFO 命令来完成的**。就像下图所示，哨兵 2 给主库发送 INFO 命令，主库接受到这个命令后，就会把**从库列表返回给哨兵**。接着，哨兵就可以根据从库列表中的连接信息，和每个从库建立连接，并在这个连接上持续地对从库进行监控。哨兵 1 和 3 可以通过相同的方法和从库建立连接。
 
-<img src="images/88fdc68eb94c44efbdf7357260091de0.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/88fdc68eb94c44efbdf7357260091de0.jpg" alt="img" style="zoom:25%;" />
 
 通过 pub/sub 机制，哨兵之间可以组成集群，同时，哨兵又通过 INFO 命令，获得了从库连接信息，也能和从库建立连接，并进行监控了。
 
@@ -1112,7 +1112,7 @@ sentinel monitor <master-name> <ip> <redis-port> <quorum>
 
 频道有这么多，一下子全部学习容易丢失重点。为了减轻你的学习压力，我把重要的频道汇总在了一起，涉及几个关键事件，包括主库下线判断、新主库选定、从库重新配置。
 
-<img src="images/4e9665694a9565abbce1a63cf111f725.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/4e9665694a9565abbce1a63cf111f725.jpg" alt="img" style="zoom:25%;" />
 
 知道了这些频道之后，你就可以**让客户端从哨兵这里订阅消息**了。具体的操作步骤是，客户端读取哨兵的配置文件后，可以获得哨兵的地址和端口，和哨兵建立网络连接。然后，我们可以在客户端执行订阅命令，来获取不同的事件消息。
 
@@ -1150,7 +1150,7 @@ switch-master <master name> <oldip> <oldport> <newip> <newport>
 
 > ​	任何一个实例只要自身判断主库“主观下线”后，就会给其他实例发送 is-master-down-by-addr 命令。接着，其他实例会根据自己和主库的连接情况，做出 Y 或 N 的响应，Y 相当于赞成票，N 相当于反对票。
 >
-> <img src="images/e0832d432c14c98066a94e0ef86af384.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/e0832d432c14c98066a94e0ef86af384.jpg" alt="img" style="zoom:25%;" />
 >
 > 一个哨兵获得了仲裁所需的赞成票数后，就可以标记主库为“客观下线”。这个所需的赞成票数是通过哨兵配置文件中的 ==quorum 配置项==设定的。例如，现在有 5 个哨兵，quorum 配置的是 3，那么，一个哨兵需要 3 张赞成票，就可以标记主库为“客观下线”了。这 3 张赞成票包括哨兵自己的一张赞成票和另外两个哨兵的赞成票。
 
@@ -1163,7 +1163,7 @@ switch-master <master name> <oldip> <oldport> <newip> <newport>
 
 这么说你可能还不太好理解，我再画一张图片，展示一下 3 个哨兵、quorum 为 2 的选举过程。
 
-<img src="images/5f6ceeb9337e158cc759e23c0f375fd9.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/5f6ceeb9337e158cc759e23c0f375fd9.jpg" alt="img" style="zoom:25%;" />
 
 **需要注意的是，如果哨兵集群只有 2 个实例**，此时，一个哨兵要想成为 Leader，必须获得 2 票，而不是 1 票。所以，如果有个哨兵挂掉了，那么，此时的集群是无法进行主从库切换的。因此，通常我们至少会配置 3 个哨兵实例。这一点很重要，你在实际应用时可不能忽略了。
 
@@ -1215,7 +1215,7 @@ switch-master <master name> <oldip> <oldport> <newip> <newport>
 
 ==切片集群，也叫分片集群==，就是指启动多个Redis实例组成一个集群，然后按照一定的规则，把收到的数据划分成多份，每一份用一个实例来保存。回到我们刚刚的场景中，如果把25GB的数据平均分成5份（当然，也可以不做均分），使用5个实例来保存，每个实例只需要保存5GB数据。如下图所示：
 
-<img src="images/793251ca784yyf6ac37fe46389094b26.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/793251ca784yyf6ac37fe46389094b26.jpg" alt="img" style="zoom:25%;" />
 
 那么，在切片集群中，实例在为5GB数据生成RDB时，数据量就小了很多，fork子进程一般不会给主线程带来较长时间的阻塞。采用多个实例保存数据切片后，我们既能保存25GB数据，又避免了fork子进程阻塞主线程而导致的响应突然变慢。
 
@@ -1230,7 +1230,7 @@ switch-master <master name> <oldip> <oldport> <newip> <newport>
 - **纵向扩展**：升级单个Redis实例的资源配置，包括增加内存容量、增加磁盘容量、使用更高配置的CPU。就像下图中，原来的实例内存是8GB，硬盘是50GB，纵向扩展后，内存增加到24GB，磁盘增加到150GB。
 - **横向扩展**：横向增加当前Redis实例的个数，就像下图中，原来使用1个8GB内存、50GB磁盘的实例，现在使用三个相同配置的实例。
 
-<img src="images/7a512fec7eba789c6d098b834929701a.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/7a512fec7eba789c6d098b834929701a.jpg" alt="img" style="zoom:25%;" />
 
 那么，这两种方式的优缺点分别是什么呢？
 
@@ -1272,7 +1272,7 @@ switch-master <master name> <oldip> <oldport> <newip> <newport>
 >
 > 为了便于你理解，我画一张示意图来解释一下，数据、哈希槽、实例这三者的映射分布情况。
 >
-> <img src="images/7d070c8b19730b308bfaabbe82c2f1ab.jpg" alt="img" style="zoom: 25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/7d070c8b19730b308bfaabbe82c2f1ab.jpg" alt="img" style="zoom: 25%;" />
 >
 > 示意图中的切片集群一共有3个实例，同时假设有5个哈希槽，我们首先可以通过下面的命令手动分配哈希槽：实例1保存哈希槽0和1，实例2保存哈希槽2和3，实例3保存哈希槽4。
 >
@@ -1322,7 +1322,7 @@ GET hello:key
 
 我画一张图来说明一下，MOVED重定向命令的使用方法。可以看到，由于负载均衡，Slot 2中的数据已经从实例2迁移到了实例3，但是，客户端缓存仍然记录着“Slot 2在实例2”的信息，所以会给实例2发送命令。实例2给客户端返回一条MOVED命令，把Slot 2的最新位置（也就是在实例3上），返回给客户端，客户端就会再次向实例3发送请求，==同时还会更新本地缓存==，把Slot 2与实例的对应关系更新过来。
 
-<img src="images/350abedefcdbc39d6a8a8f1874eb0809.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/350abedefcdbc39d6a8a8f1874eb0809.jpg" alt="img" style="zoom:25%;" />
 
 需要注意的是，在上图中，当客户端给实例2发送命令时，Slot 2中的数据已经全部迁移到了实例3。在实际应用时，如果Slot 2中的数据比较多，就可能会出现一种情况：==客户端向实例2发送请求，但此时，Slot 2中的数据只有一部分迁移到了实例3，还有部分数据没有迁移==。在这种迁移部分完成的情况下，客户端就会收到一条**ASK报错信息**，如下所示：
 
@@ -1339,7 +1339,7 @@ GET hello:key
 
 ASK命令表示两层含义：第一，表明Slot数据还在迁移中；第二，ASK命令把客户端所请求数据的最新实例地址返回给客户端，此时，客户端需要给实例3发送ASKING命令，然后再发送操作命令。
 
-<img src="images/e93ae7f4edf30724d58bf68yy714eeb0.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/e93ae7f4edf30724d58bf68yy714eeb0.jpg" alt="img" style="zoom:25%;" />
 
 和MOVED命令不同，==ASK命令并不会更新客户端缓存的哈希槽分配信息==。所以，在上图中，如果客户端再次请求Slot 2中的数据，它还是会给实例2发送请求。这也就是说，ASK命令的作用只是让客户端能给新实例发送一次请求，而不像MOVED命令那样，会更改本地缓存，让后续所有命令都发往新实例。
 
@@ -1393,7 +1393,7 @@ ASK命令表示两层含义：第一，表明Slot数据还在迁移中；第二�
 
 - 但是，请你注意，通常情况下，在我们采用多线程后，如果没有良好的系统设计，实际得到的结果，其实是右图所展示的那样。我们刚开始增加线程数时，系统吞吐率会增加，但是，再进一步增加线程时，系统吞吐率就增长迟缓了，有时甚至还会出现下降的情况。
 
-<img src="images/cbd394e62219cc5a6d9ae64035e51733.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/cbd394e62219cc5a6d9ae64035e51733.jpg" alt="img" style="zoom:25%;" />
 
 为什么会出现这种情况呢？**一个关键的瓶颈在于**，系统中通常会存在被多线程同时访问的共享资源，比如一个共享的数据结构。当有多个线程要修改这个共享资源时，为了**保证共享资源的正确性**，就需要有额外的机制进行保证，而这个额外的机制，就会带来额外的开销。
 
@@ -1429,7 +1429,7 @@ ASK命令表示两层含义：第一，表明Slot数据还在迁移中；第二�
 >
 > 下图显示了这一过程，其中，bind/listen、accept、recv、parse 和 send 属于网络 IO 处理，而 get 属于键值数据操作。既然 Redis 是单线程，那么，最基本的一种实现是在一个线程中依次执行上面说的这些操作。
 
-<img src="images/e18499ab244e4428a0e60b4da6575bc9.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/e18499ab244e4428a0e60b4da6575bc9.jpg" alt="img" style="zoom:25%;" />
 
 但是，在这里的网络 IO 操作中，**有潜在的阻塞点，分别是 accept() 和 recv()**。当 Redis 监听到一个客户端有连接请求，但一直未能成功建立起连接时，会阻塞在 accept() 函数这里，导致其他客户端无法和 Redis 建立连接。类似的，当 Redis 通过 recv() 从一个客户端读取数据时，如果数据一直没有到达，Redis 也会一直阻塞在 recv()。
 
@@ -1441,7 +1441,7 @@ ASK命令表示两层含义：第一，表明Slot数据还在迁移中；第二�
 
 在 socket 模型中，不同操作调用后会返回不同的套接字类型。socket() 方法会返回主动套接字，然后调用 listen() 方法，将主动套接字转化为监听套接字，此时，可以监听来自客户端的连接请求。最后，调用 accept() 方法接收到达的客户端连接，并返回已连接套接字。
 
-<img src="images/1ccc62ab3eb2a63c4965027b4248f34a.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/1ccc62ab3eb2a63c4965027b4248f34a.jpg" alt="img" style="zoom:25%;" />
 
 针对监听套接字，我们可以设置非阻塞模式：当 Redis 调用 accept() 但一直未有连接请求到达时，Redis 线程可以返回处理其他操作，而不用一直等待。但是，你要注意的是，调用 accept() 时，已经存在监听套接字了。
 
@@ -1461,7 +1461,7 @@ Linux 中的 IO 多路复用机制是**指一个线程处理多个 IO 流**，�
 
 下图就是基于多路复用的 Redis IO 模型。图中的多个 FD 就是刚才所说的多个套接字。==Redis 网络框架调用 epoll 机制，让内核监听这些套接字==。此时，Redis 线程**不会阻塞在某一个特定的监听或已连接套接字上**，也就是说，不会阻塞在某一个特定的客户端请求处理上。正因为此，Redis 可以同时和多个客户端连接并处理请求，从而提升并发性。
 
-<img src="images/00ff790d4f6225aaeeebba34a71d8bea.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/00ff790d4f6225aaeeebba34a71d8bea.jpg" alt="img" style="zoom:25%;" />
 
 ==为了在请求到达时能通知到 Redis 线程==，select/epoll 提供了基于事件的回调机制，即针对不同事件的发生，调用相应的处理函数。
 
@@ -1588,7 +1588,7 @@ Redis 启动以后，本身就是一个进程，它会接收客户端发送的�
 
 然后，我们再看下 Redis 使用的线程。从 4.0 版本开始，Redis 也开始**使用 pthread_create 创建线程**，这些线程在创建后，一般会自行执行一些任务，例如执行异步删除任务。相对于完成主要工作的主线程来说，我们一般可以称这些线程为**后台线程**。关于 Redis 后台线程的具体执行机制，我会在第 16 讲具体介绍。
 
-<img src="images/c2c5bd3a66921b1b0cc1d377dfabd451.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c2c5bd3a66921b1b0cc1d377dfabd451.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -1604,7 +1604,7 @@ Redis 在使用 RDB 方式进行持久化时，会用到写时复制机制。我
 
 bgsave 子进程复制主线程的页表以后，假如主线程需要修改虚页 7 里的数据，那么，主线程就需要新分配一个物理页（假设是物理页 53），然后把修改后的虚页 7 里的数据写到物理页 53 上，而虚页 7 里原来的数据仍然保存在物理页 33 上。这个时候，虚页 7 到物理页 33 的映射关系，仍然保留在 bgsave 子进程中。所以，bgsave 子进程可以无误地把虚页 7 的原始数据写入 RDB 文件。
 
-<img src="images/cc98dc9f65a1079f3638158aacf81aeb.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/cc98dc9f65a1079f3638158aacf81aeb.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -1618,7 +1618,7 @@ Redis 主从库在进行复制时，当主库要把全量复制期间的写操�
 
 **repl_backlog_buffer 是一块专用 buffer**，在 Redis 服务器启动后，开始一直接收写操作命令，==这是所有从库共享的。主库和从库会各自记录自己的复制进度==，所以，不同的从库在进行恢复时，会把自己的复制进度（slave_repl_offset）发给主库，主库就可以和它独立同步。
 
-<img src="images/7a1795yy4f6dc064f0d34ef1231203a8.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/7a1795yy4f6dc064f0d34ef1231203a8.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -1683,7 +1683,7 @@ Redis 主从库在进行复制时，当主库要把全量复制期间的写操�
 
 - 但是，当你**保存的数据中包含字符**时，String类型就会用简单动态字符串（Simple Dynamic String，SDS）结构体来保存，如下图所示：
 
-<img src="images/37c6a8d5abd65906368e7c4a6b938657.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/37c6a8d5abd65906368e7c4a6b938657.jpg" alt="img" style="zoom:25%;" />
 
 - **buf**：字节数组，保存实际数据。为了表示字节数组的结束，Redis会自动在数组最后加一个“0”，这就会额外占用1个字节的开销。
 - **len**：占4个字节，表示buf的已用长度。
@@ -1697,7 +1697,7 @@ Redis 主从库在进行复制时，当主库要把全量复制期间的写操�
 
 一个RedisObject包含了8字节的元数据和一个8字节指针，这个指针再进一步指向具体数据类型的实际数据所在，例如指向String类型的SDS结构所在的内存地址，可以看一下下面的示意图。关于RedisObject的具体结构细节，我会在后面的课程中详细介绍，现在你只要了解它的基本结构和元数据开销就行了。
 
-<img src="images/3409948e9d3e8aa5cd7cafb9b66c2857.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/3409948e9d3e8aa5cd7cafb9b66c2857.jpg" alt="img" style="zoom:25%;" />
 
 为了节省内存空间，Redis还对Long类型整数和SDS的内存布局做了专门的设计。
 
@@ -1707,7 +1707,7 @@ Redis 主从库在进行复制时，当主库要把全量复制期间的写操�
 
 为了帮助你理解int、embstr和raw这三种编码模式，我画了一张示意图，如下所示：
 
-<img src="images/ce83d1346c9642fdbbf5ffbe701bfbe3.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/ce83d1346c9642fdbbf5ffbe701bfbe3.jpg" alt="img" style="zoom:25%;" />
 
 好了，知道了RedisObject所包含的额外元数据开销，现在，我们就可以计算String类型的内存使用量了。
 
@@ -1715,7 +1715,7 @@ Redis 主从库在进行复制时，当主库要把全量复制期间的写操�
 
 我在[第2讲](https://time.geekbang.org/column/article/268253)中说过，**Redis会使用一个全局哈希表保存所有键值对**，哈希表的每一项是一个**dictEntry的结构体**，用来指向一个键值对。dictEntry结构中有三个8字节的指针，分别指向key、value以及下一个dictEntry，**三个指针共24字节**，如下图所示：
 
-<img src="images/a6708594a86d2a49107f8b6cfc1a2b8a.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/a6708594a86d2a49107f8b6cfc1a2b8a.jpg" alt="img" style="zoom:25%;" />
 
 ==但是，这三个指针只有24字节，为什么会占用了32字节呢？==这就要提到Redis使用的**内存分配库jemalloc**了。jemalloc在分配内存时，会根据我们申请的字节数N，找一个比N大，但是**最接近N的2的幂次数**作为分配的空间，这样可以减少频繁分配的次数。
 
@@ -1731,7 +1731,7 @@ Redis有一种==底层数据结构==，叫压缩列表（ziplist），这是一�
 
 我们先回顾下压缩列表的构成。表头有三个字段zlbytes、zltail和zllen，分别表示列表长度、列表尾的偏移量，以及列表中的entry个数。压缩列表尾还有一个zlend，表示列表结束。
 
-![img](images/f6d4df5f7d6e80de29e2c6446b02429f.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f6d4df5f7d6e80de29e2c6446b02429f.jpg)
 
 压缩列表之所以能节省内存，就**在于它是用一系列连续的entry保存数据，这些entry会挨个儿放置在内存中，不需要再用额外的指针进行连接，这样就可以节省指针所占用的空间**。每个entry的元数据包括下面几部分。
 
@@ -1838,14 +1838,14 @@ used_memory:1039136
 
 记录所有登录过App的用户ID还是比较简单的，我们可以直接使用Set类型，把key设置为user:id，表示记录的是用户ID，value就是一个Set集合，里面是所有登录过App的用户ID，我们可以把这个Set叫作累计用户Set，如下图所示：
 
-<img src="images/990e56babf199d9a7fa4c7343167ecca.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/990e56babf199d9a7fa4c7343167ecca.jpg" alt="img" style="zoom:25%;" />
 
 需要注意的是，累计用户Set中没有日期信息，我们是不能直接统计每天的新增用户的。所以，我们还需要把每一天登录的用户ID，记录到一个新集合中，我们把这个集合叫作每日用户Set，它有两个特点：
 
 1. key是 user:id 以及当天日期，例如 user: id:20200803；
 2. value是Set集合，记录当天登录的用户ID。
 
-<img src="images/a63dd95d5e44bf538fe960e67761b59e.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/a63dd95d5e44bf538fe960e67761b59e.jpg" alt="img" style="zoom:25%;" />
 
 **在统计每天的新增用户时，我们只用计算每日用户Set和累计用户Set的差集就行。**
 
@@ -1976,7 +1976,7 @@ BITCOUNT uid:sign:3000:202008
 
 我以按位“与”操作为例来具体解释一下。从下图中，可以看到，三个Bitmap bm1、bm2和bm3，对应bit位做“与”操作，结果保存到了一个新的Bitmap中（示例中，这个结果Bitmap的key被设为“resmap”）。
 
-![img](images/4151af42513cf5f7996fe86c6064f97a.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/4151af42513cf5f7996fe86c6064f97a.jpg)
 
 回到刚刚的问题，在统计1亿个用户连续10天的签到情况时，你可以把每天的日期作为key，每个key对应一个1亿位的Bitmap，每一个bit对应一个用户当天的签到情况。
 
@@ -2040,7 +2040,7 @@ PFADD page1:uv user1 user2 user3 user4 user5
 
 这节课，我们结合统计新增用户数和留存用户数、最新评论列表、用户签到数以及网页独立访客量这4种典型场景，学习了集合类型的4种统计模式，分别是聚合统计、排序统计、二值状态统计和基数统计。为了方便你掌握，我把Set、Sorted Set、Hash、List、Bitmap、HyperLogLog的支持情况和优缺点汇总在了下面的表格里，希望你把这张表格保存下来，时不时地复习一下。
 
-<img src="images/c0bb35d0d91a62ef4ca1bd939a9b136e.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c0bb35d0d91a62ef4ca1bd939a9b136e.jpg" alt="img" style="zoom:25%;" />
 
 可以看到，Set和Sorted Set都支持多种聚合统计，不过，对于差集计算来说，只有Set支持。Bitmap也能做多个Bitmap间的聚合计算，包括与、或和异或操作。
 
@@ -2080,7 +2080,7 @@ PFADD page1:uv user1 user2 user3 user4 user5
 
 **这种数据记录模式**属于一个key（例如车ID）对应一个value（一组经纬度）。当有很多车辆信息要保存时，就需要有一个集合来保存一系列的key和value。Hash集合类型可以快速存取一系列的key和value，正好可以用来记录一系列车辆ID和经纬度的对应关系，所以，我们可以把不同车辆的ID和它们对应的经纬度信息存在Hash集合中，如下图所示：
 
-<img src="images/c8d3f1951874da0d916ed51ccdce9e0e.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c8d3f1951874da0d916ed51ccdce9e0e.jpg" alt="img" style="zoom:25%;" />
 
 同时，Hash类型的HSET操作命令，会根据key来设置相应的value值，所以，我们可以用它来快速地更新车辆变化的经纬度信息。到这里，Hash类型看起来是一个不错的选择。
 
@@ -2094,7 +2094,7 @@ Sorted Set类型也支持一个key对应一个value的记录模式，其中，ke
 
 用Sorted Set来保存车辆的经纬度信息时，Sorted Set的元素是车辆ID，元素的权重分数是经纬度信息，如下图所示：
 
-<img src="images/a9a6bc78ea3bb652ef1404020dd2934e.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/a9a6bc78ea3bb652ef1404020dd2934e.jpg" alt="img" style="zoom:25%;" />
 
 这时问题来了，**Sorted Set元素的权重分数是一个浮点数（float类型）**，而一组经纬度包含的是经度和纬度两个值，是没法直接保存为一个浮点数的，那具体该怎么进行保存呢？
 
@@ -2122,17 +2122,17 @@ Sorted Set类型也支持一个key对应一个value的记录模式，其中，ke
 >
 > 按照这种方法，做完5次分区后，我们把经度值116.37定位在[112.5, 123.75]这个区间，并且得到了经度值的5位编码值，即11010。这个编码过程如下表所示：
 >
-> <img src="images/3cb007yy63c820d6dd2e4999608683f2.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/3cb007yy63c820d6dd2e4999608683f2.jpg" alt="img" style="zoom:25%;" />
 >
 > 对纬度的编码方式，和对经度的一样，只是纬度的范围是[-90，90]，下面这张表显示了对纬度值39.86的编码过程。
 >
-> <img src="images/65f41469866cb94963b4c9afbf2b016d.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/65f41469866cb94963b4c9afbf2b016d.jpg" alt="img" style="zoom:25%;" />
 >
 > 当一组经纬度值都编完码后，我们再把它们的各自编码值组合在一起，组合的规则是：最终编码值的偶数位上依次是经度的编码值，奇数位上依次是纬度的编码值，其中，偶数位从0开始，奇数位从1开始。
 >
 > 我们刚刚计算的经纬度（116.37，39.86）的各自编码值是11010和10111，组合之后，第0位是经度的第0位1，第1位是纬度的第0位1，第2位是经度的第1位1，第3位是纬度的第1位0，以此类推，就能得到最终编码值1110011101，如下图所示：
 >
-> <img src="images/4a8296e841f18ed4f3a554703ebd5887.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/4a8296e841f18ed4f3a554703ebd5887.jpg" alt="img" style="zoom:25%;" />
 >
 > 用了GeoHash编码后，原来无法用一个权重分数表示的一组经纬度（116.37，39.86）就可以用1110011101这一个值来表示，就可以保存为Sorted Set的权重分数了。
 
@@ -2147,13 +2147,13 @@ Sorted Set类型也支持一个key对应一个value的记录模式，其中，ke
 
 这4个分区对应了4个方格，每个方格覆盖了一定范围内的经纬度值，分区越多，每个方格能覆盖到的地理空间就越小，也就越精准。我们把所有方格的编码值映射到一维空间时，相邻方格的GeoHash编码值基本也是接近的，如下图所示：
 
-<img src="images/2a2a650086acf9700c0603a4be8ceb74.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/2a2a650086acf9700c0603a4be8ceb74.jpg" alt="img" style="zoom:25%;" />
 
 所以，我们使用Sorted Set范围查询得到的相近编码值，在实际的地理空间上，也是相邻的方格，这就可以实现LBS应用“搜索附近的人或物”的功能了。
 
 不过，我要提醒你一句，有的编码值虽然在大小上接近，但实际对应的方格却距离比较远。例如，我们用4位来做GeoHash编码，把经度区间[-180,180]和纬度区间[-90,90]各分成了4个分区，一共16个分区，对应了16个方格。编码值为0111和1000的两个方格就离得比较远，如下图所示：
 
-<img src="images/0d64c9765ab72a50abef16a0275bc0ba.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/0d64c9765ab72a50abef16a0275bc0ba.jpg" alt="img" style="zoom:25%;" />
 
 所以，**为了避免查询不准确问题，我们可以同时查询给定经纬度所在的方格周围的4个或8个方格**。
 
@@ -2208,7 +2208,7 @@ RedisObject的内部组成包括了type,、encoding,、lru和refcount 4个元数
 - refcount：记录了对象的引用计数；
 - *ptr：是指向数据的指针。
 
-<img src="images/05c2d546e507d8a863c002e2173c71af.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/05c2d546e507d8a863c002e2173c71af.jpg" alt="img" style="zoom: 25%;" />
 
 RedisObject结构借助`*ptr`指针，就可以指向不同的数据类型，例如，`*ptr`指向一个SDS或一个跳表，就表示键值对中的值是String类型或Sorted Set类型。所以，我们在定义了新的数据类型后，也只要在RedisObject中设置好新类型的type和encoding，再用`*ptr`指向新类型的实现，就行了。
 
@@ -2218,7 +2218,7 @@ RedisObject结构借助`*ptr`指针，就可以指向不同的数据类型，例
 
 接下来，我以开发一个名字叫作NewTypeObject的新数据类型为例，来解释下具体的4个操作步骤。
 
-<img src="images/88702464f8bc80ea11b26ab157926199.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/88702464f8bc80ea11b26ab157926199.jpg" alt="img" style="zoom:25%;" />
 
 **第一步：定义新数据类型的底层结构**
 
@@ -2373,7 +2373,7 @@ Hash和Sorted Set组合的方式有一个明显的好处：它们是Redis内在�
 
 可以看下用Hash集合记录设备的温度值的示意图：
 
-<img src="images/f2e7bc4586be59aa5e7e78a5599830be.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f2e7bc4586be59aa5e7e78a5599830be.jpg" alt="img" style="zoom:25%;" />
 
 当我们想要查询某个时间点或者是多个时间点上的温度数据时，直接使用HGET命令或者HMGET命令，就可以分别获得Hash集合中的一个key和多个key的value值了。
 
@@ -2397,7 +2397,7 @@ HMGET device:temperature 202008030905 202008030907 202008030908
 
 我还是以保存设备温度的时间序列数据为例，进行解释。下图显示了用Sorted Set集合保存的结果。
 
-<img src="images/9e1214dbd5b42c5b3452ea73efc8c67a.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/9e1214dbd5b42c5b3452ea73efc8c67a.jpg" alt="img" style="zoom:25%;" />
 
 使用Sorted Set保存数据后，我们就可以使用ZRANGEBYSCORE命令，按照输入的最大时间戳和最小时间戳来查询这个时间范围内的温度值了。如下所示，我们来查询一下在2020年8月3日9点7分到9点10分间的所有温度值：
 
@@ -2422,7 +2422,7 @@ ZRANGEBYSCORE device:temperature 202008030907 202008030910
 
 > ​	你可以看下下面这张示意图，命令1到命令N是在MULTI命令后、EXEC命令前发送的，它们会被一起执行，保证原子性。
 >
-> <img src="images/c0e2fd5834113cef92f2f68e7462a262.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c0e2fd5834113cef92f2f68e7462a262.jpg" alt="img" style="zoom:25%;" />
 >
 > 以保存设备状态信息的需求为例，我们执行下面的代码，把设备在2020年8月3日9时5分的温度，分别用HSET命令和ZADD命令写入Hash集合和Sorted Set集合。
 >
@@ -2588,11 +2588,11 @@ TS.RANGE device:temperature 1596416700 1596417120 AGGREGATION avg 180000
 >
 > 假设组件1需要对采集到的数据进行求和计算，并写入数据库，但是，消息到达的速度很快，组件1没有办法及时地既做采集，又做计算，并且写入数据库。所以，我们可以使用基于消息队列的通信，让组件1把数据x和y保存为JSON格式的消息，再发到消息队列，这样它就可以继续接收新的数据了。组件2则异步地从消息队列中把数据读取出来，在服务器2上进行求和计算后，再写入数据库。这个过程如下图所示：
 >
-> <img src="images/d79d46ec4aa22bf46fde3ae1a99fc2bc.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/d79d46ec4aa22bf46fde3ae1a99fc2bc.jpg" alt="img" style="zoom:25%;" />
 >
 > 我们一般把消息队列中发送消息的组件称为生产者（例子中的组件1），把接收消息的组件称为消费者（例子中的组件2），下图展示了一个通用的消息队列的架构模型：
 >
-> <img src="images/f470bb957c1faff674c08b1fa65a3a62.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f470bb957c1faff674c08b1fa65a3a62.jpg" alt="img" style="zoom:25%;" />
 >
 > 在使用消息队列时，消费者可以异步读取生产者消息，然后再进行处理。这样一来，即使生产者发送消息的速度远远超过了消费者处理消息的速度，生产者已经发送的消息也可以缓存在消息队列中，避免阻塞生产者，这是消息队列作为分布式组件通信的一大优势。
 
@@ -2626,7 +2626,7 @@ List本身就是按先进先出的顺序对数据进行存取的，所以，如�
 
 如下图所示，生产者先用LPUSH写入了两条库存消息，分别是5和3，表示要把库存更新为5和3；消费者则用RPOP把两条消息依次读出，然后进行相应的处理。
 
-<img src="images/b0959216cbce7ac383ce206b8884777c.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/b0959216cbce7ac383ce206b8884777c.jpg" alt="img" style="zoom:25%;" />
 
 不过，在消费者读取数据时，有一个潜在的性能风险点。
 
@@ -2659,7 +2659,7 @@ LPUSH mq "101030001:stock:5"
 
 我画了一张示意图，展示了使用BRPOPLPUSH命令留存消息，以及消费者再次读取消息的过程，你可以看下。
 
-<img src="images/5045395da08317b546aab7eb698d013d.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/5045395da08317b546aab7eb698d013d.jpg" alt="img" style="zoom:25%;" />
 
 好了，到这里，你可以看到，基于List类型，我们可以满足分布式组件对消息队列的三大需求。但是，在用List做消息队列时，我们还可能遇到过一个问题：**生产者消息发送很快，而消费者处理消息的速度比较慢，这就导致List中的消息越积越多，给Redis的内存带来很大压力**。
 
@@ -2825,7 +2825,7 @@ XPENDING mqstream group2 - + 10 consumer2
 
 我画了一张表格，汇总了用List和Streams实现消息队列的特点和区别。当然，在实践的过程中，你也可以根据新的积累，进一步补充和完善这张表。
 
-<img src="images/b2d6581e43f573da6218e790bb8c6814.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/b2d6581e43f573da6218e790bb8c6814.jpg" alt="img" style="zoom:25%;" />
 
 其实，关于Redis是否适合做消息队列，业界一直是有争论的。很多人认为，要使用消息队列，就应该采用Kafka、RabbitMQ这些专门面向消息队列场景的软件，而Redis更加适合做缓存。
 
@@ -2876,7 +2876,7 @@ Redis实例在运行时，要和许多对象进行交互，这些不同的交互
 
 为了帮助你理解，我再画一张图来展示下这4类交互对象和具体的操作之间的关系。
 
-<img src="images/6ce8abb76b3464afe1c4cb3bbe426922.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/6ce8abb76b3464afe1c4cb3bbe426922.jpg" alt="img" style="zoom:25%;" />
 
 接下来，我们来逐个分析下在这些交互对象中，有哪些操作会引起阻塞。
 
@@ -2896,7 +2896,7 @@ Redis中涉及集合的操作复杂度通常为O(N)，我们要在使用时重�
 
 **那么，什么时候会释放大量内存呢？其实就是在删除大量键值对数据的时候，最典型的就是删除包含了大量元素的集合，也称为bigkey删除**。为了让你对bigkey的删除性能有一个直观的印象，我测试了不同元素数量的集合在进行删除操作时所消耗的时间，如下表所示：
 
-<img src="images/94bc8cf9yy5c34a6445434a15b1e9653.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/94bc8cf9yy5c34a6445434a15b1e9653.jpg" alt="img" style="zoom:25%;" />
 
 从这张表里，我们可以得出三个结论：
 
@@ -2956,7 +2956,7 @@ Redis中涉及集合的操作复杂度通常为O(N)，我们要在使用时重�
 
 这么说可能有点抽象，我画一张图片来解释下。
 
-<img src="images/f196035e3d2ba65257b211ed436b0b61.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f196035e3d2ba65257b211ed436b0b61.jpg" alt="img" style="zoom:25%;" />
 
 - 主线程接收到操作1后，因为操作1并不用给客户端返回具体的数据，所以，主线程可以把它交给后台子线程来完成，同时只要给客户端返回一个“OK”结果就行。
 
@@ -2988,7 +2988,7 @@ Redis主线程启动后，会使用操作系统提供的**pthread_create**函数
 
 下面这张图展示了Redis中的异步子线程执行机制，你可以再看下，加深印象。
 
-<img src="images/ae004728bfe6d3771c7424e4161e7969.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/ae004728bfe6d3771c7424e4161e7969.jpg" alt="img" style="zoom:25%;" />
 
 这里有个地方需要你注意一下，异步的键值对删除和数据库清空操作是Redis 4.0后提供的功能，Redis也提供了新的命令来执行这两个操作。
 
@@ -3037,7 +3037,7 @@ FLUSHALL AYSNC
 
 这里提到了一个概念，就是物理核的私有缓存。它其实是指缓存空间只能被当前的这个物理核使用，其他的物理核无法对这个核的缓存空间进行数据存取。我们来看一下CPU物理核的架构。
 
-<img src="images/c2d620c012a82e825570df631a7fbc3a.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c2d620c012a82e825570df631a7fbc3a.jpg" alt="img" style="zoom:25%;" />
 
 因为L1和L2缓存是每个物理核私有的，所以，当数据或指令保存在L1、L2缓存时，物理核访问它们的延迟不超过10纳秒，速度非常快。那么，如果Redis把要运行的指令或存取的数据保存在L1和L2缓存的话，就能高速地访问这些指令和数据。
 
@@ -3049,13 +3049,13 @@ FLUSHALL AYSNC
 
 为了方便你理解，我用一张图展示一下物理核和逻辑核，以及一级、二级缓存的关系。
 
-<img src="images/d9689a38cbe67c3008d8ba99663c2f09.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/d9689a38cbe67c3008d8ba99663c2f09.jpg" alt="img" style="zoom:25%;" />
 
 在主流的服务器上，一个CPU处理器会有10到20多个物理核。同时，为了提升服务器的处理能力，服务器上通常还会有多个CPU处理器（也称为多CPU Socket），每个处理器有自己的物理核（包括L1、L2缓存），L3缓存，以及连接的内存，同时，不同处理器间通过总线连接。
 
 下图显示的就是多CPU Socket的架构，图中有两个Socket，每个Socket有两个物理核。
 
-<img src="images/5ceb2ab6f61c064284c8f8811431bc3d.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/5ceb2ab6f61c064284c8f8811431bc3d.jpg" alt="img" style="zoom:25%;" />
 
 **在多CPU架构上，应用程序可以在不同的处理器上运行**。在刚才的图中，Redis可以先在Socket 1上运行一段时间，然后再被调度到Socket 2上运行。
 
@@ -3108,7 +3108,7 @@ taskset -c 0 ./redis-server
 
 我们来看一下绑核前后的Redis的99%尾延迟。
 
-![img](images/eb72b9f58052d6a6023d3e1dac522157.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/eb72b9f58052d6a6023d3e1dac522157.jpg)
 
 可以看到，在CPU多核的环境下，通过绑定Redis实例和CPU核，可以有效降低Redis的尾延迟。当然，绑核不仅对降低尾延迟有好处，同样也能降低平均延迟、提升吞吐率，进而提升Redis性能。
 
@@ -3124,13 +3124,13 @@ taskset -c 0 ./redis-server
 
 我们先来看下Redis实例和网络中断程序的数据交互：网络中断处理程序从网卡硬件中读取数据，并把数据写入到操作系统内核维护的一块内存缓冲区。内核会通过epoll机制触发事件，通知Redis实例，Redis实例再把数据从内核的内存缓冲区拷贝到自己的内存空间，如下图所示：
 
-![img](images/8753ce6985fd08bb9cf9a3813c8b2cd2.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/8753ce6985fd08bb9cf9a3813c8b2cd2.jpg)
 
 那么，在CPU的NUMA架构下，当网络中断处理程序、Redis实例分别和CPU核绑定后，就会有一个潜在的风险：**如果网络中断处理程序和Redis实例各自所绑的CPU核不在同一个CPU Socket上，那么，Redis实例读取网络数据时，就需要跨CPU Socket访问内存，这个过程会花费较多时间。**
 
 这么说可能有点抽象，我再借助一张图来解释下。
 
-![img](images/30cd42yy86debc0eb6e7c5b069533ab0.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/30cd42yy86debc0eb6e7c5b069533ab0.jpg)
 
 可以看到，图中的网络中断处理程序被绑在了CPU Socket 1的某个核上，而Redis实例则被绑在了CPU Socket 2上。此时，网络中断处理程序读取到的网络数据，被保存在CPU Socket 1的本地内存中，当Redis实例要访问网络数据时，就需要Socket 2通过总线把内存访问命令发送到 Socket 1上，进行远程访问，时间开销比较大。
 
@@ -3138,7 +3138,7 @@ taskset -c 0 ./redis-server
 
 所以，为了避免Redis跨CPU Socket访问网络数据，我们最好把网络中断程序和Redis实例绑在同一个CPU Socket上，这样一来，Redis实例就可以直接从本地内存读取网络数据了，如下图所示：
 
-![img](images/41f02b2afb08ec54249680e8cac30179.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/41f02b2afb08ec54249680e8cac30179.jpg)
 
 不过，需要注意的是，**在CPU的NUMA架构下，对CPU核的编号规则，并不是先把一个CPU Socket中的所有逻辑核编完，再对下一个CPU Socket中的逻辑核编码，而是先给每个CPU Socket中每个物理核的第一个逻辑核依次编号，再给每个CPU Socket中的物理核的第二个逻辑核依次编号。**
 
@@ -3296,7 +3296,7 @@ Redis的低延迟是我们永恒的追求目标，而多核CPU和NUMA架构已�
 
 这三个操作都需要保证事务原子性，所以，如果此时Redis的延迟增加，就会拖累App Server端整个事务的执行。这个事务一直完成不了，又会导致MySQL上写事务占用的资源无法释放，进而导致访问MySQL的其他请求被阻塞。很明显，Redis变慢会带来严重的连锁反应。
 
-<img src="images/58555bc098b518e992136f1128430c64.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/58555bc098b518e992136f1128430c64.jpg" alt="img" style="zoom:25%;" />
 
 我相信，不少人遇到过这个问题，那具体该怎么解决呢？
 
@@ -3369,7 +3369,7 @@ Max latency so far: 9871 microseconds.
 
 医生诊断一般都是有章可循的。同样，Redis的性能诊断也有章可依，这就是影响Redis的关键因素。下面这张图你应该有印象，这是我们在[第一节课](https://time.geekbang.org/column/article/268262)画的Redis架构图。你可以重点关注下我在图上新增的红色模块，也就是==Redis自身的操作特性、文件系统和操作系统，它们是影响Redis性能的三大要素==。
 
-<img src="images/cd026801924e197f5c79828c368cd706.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/cd026801924e197f5c79828c368cd706.jpg" alt="img" style="zoom:25%;" />
 
 接下来，我将从这三大要素入手，结合实际的应用场景，依次给你介绍从不同要素出发排查和解决问题的实践经验。这节课我先给你介绍Redis的自身操作特性的影响，下节课我们再重点研究操作系统和文件系统的影响。
 
@@ -3464,7 +3464,7 @@ ACTIVE_EXPIRE_CYCLE_LOOKUPS_PER_LOOP是Redis的一个参数，默认是20，那�
 
 那么，接下来，我再从这两个层面，继续给你介绍，如何进一步解决Redis变慢的问题。
 
-<img src="images/cd026801924e197f5c79828c368cd706-20230628154638987.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/cd026801924e197f5c79828c368cd706-20230628154638987.jpg" alt="img" style="zoom:25%;" />
 
 ### 3.4.1 文件系统：AOF模式
 
@@ -3474,7 +3474,7 @@ ACTIVE_EXPIRE_CYCLE_LOOKUPS_PER_LOOP是Redis的一个参数，默认是20，那�
 
 write只要把日志记录写到内核缓冲区，就可以返回了，并不需要等待日志实际写回到磁盘；而fsync需要把日志记录写回到磁盘后才能返回，时间较长。下面这张表展示了三种写回策略所执行的系统调用。
 
-<img src="images/9f1316094001ca64c8dfca37c2c49ea4.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/9f1316094001ca64c8dfca37c2c49ea4.jpg" alt="img" style="zoom:25%;" />
 
 **当写回策略配置为everysec和always时，Redis需要调用fsync把日志写回磁盘**。但是，这两种写回策略的具体执行情况还不太一样。
 
@@ -3490,13 +3490,13 @@ write只要把日志记录写到内核缓冲区，就可以返回了，并不需
 
 为了帮助你理解，我再画一张图来展示下在磁盘压力小和压力大的时候，fsync后台子线程和主线程受到的影响。
 
-<img src="images/2a47b3f6fd7beaf466a675777ebd28a6.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/2a47b3f6fd7beaf466a675777ebd28a6.jpg" alt="img" style="zoom:25%;" />
 
 好了，说到这里，你已经了解了，==由于fsync后台子线程和AOF重写子进程的存在，主IO线程一般不会被阻塞。但是，如果在重写日志时，AOF重写子进程的写入量比较大，fsync线程也会被阻塞，进而阻塞主线程，导致延迟增加。现在，我来给出排查和解决建议。==
 
 首先，你可以检查下Redis配置文件中的appendfsync配置项，该配置项的取值表明了Redis实例使用的是哪种AOF日志写回策略，如下所示：
 
-<img src="images/ba770d1f25ffae79a101c13b9f8aa9e9.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/ba770d1f25ffae79a101c13b9f8aa9e9.jpg" alt="img" style="zoom:25%;" />
 
 如果AOF写回策略使用了everysec或always配置，请先确认下业务方对数据可靠性的要求，明确是否需要每一秒或每一个操作都记日志。有的业务方不了解Redis AOF机制，很可能就直接使用数据可靠性最高等级的always配置了。其实，在有些场景中（例如Redis用于缓存），数据丢了还可以从后端数据库中获取，并不需要很高的数据可靠性。
 
@@ -3658,7 +3658,7 @@ echo never /sys/kernel/mm/transparent_hugepage/enabled
 
 其实，这趟车的空座位是和你们的人数相匹配的，只是这些空座位是分散的，如下图所示：
 
-<img src="images/23ebc99ff968f2c7edd0f8ddf7def8df.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/23ebc99ff968f2c7edd0f8ddf7def8df.jpg" alt="img" style="zoom:25%;" />
 
 我们可以把这些分散的空座位叫作“车厢座位碎片”，知道了这一点，操作系统的内存碎片就很容易理解了。虽然操作系统的剩余内存空间总量足够，但是，应用申请的是一块连续地址空间的N字节，但在剩余的内存空间中，没有大小为N字节的连续空间了，那么，这些剩余空间就是内存碎片（比如上图中的“空闲2字节”和“空闲1字节”，就是这样的碎片）。
 
@@ -3690,13 +3690,13 @@ Redis通常作为共用的缓存系统或键值数据库对外提供服务，所
 
 比如说，应用A保存6字节数据，jemalloc按分配策略分配8字节。如果应用A不再保存新数据，那么，这里多出来的2字节空间就是内存碎片了，如下图所示：
 
-<img src="images/46d93f2ef50a7f6f91812d0c21ebd6a5.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/46d93f2ef50a7f6f91812d0c21ebd6a5.jpg" alt="img" style="zoom:25%;" />
 
 第二个外因是，这些键值对会被修改和删除，这会导致空间的扩容和释放。具体来说，一方面，如果修改后的键值对变大或变小了，就需要占用额外的空间或者释放不用的空间。另一方面，删除的键值对就不再需要内存空间了，此时，就会把空间释放出来，形成空闲空间。
 
 我画了下面这张图来帮助你理解。
 
-<img src="images/4d5265c6a38d1839bf4943918f6b6db8.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/4d5265c6a38d1839bf4943918f6b6db8.jpg" alt="img" style="zoom:25%;" />
 
 一开始，应用A、B、C、D分别保存了3、1、2、4字节的数据，并占据了相应的内存空间。然后，应用D删除了1个字节，这个1字节的内存空间就空出来了。紧接着，应用A修改了数据，从3字节变成了4字节。为了保持A数据的空间连续性，操作系统就需要把B的数据拷贝到别的空间，比如拷贝到D刚刚释放的空间中。此时，应用C和D也分别删除了2字节和1字节的数据，整个内存空间上就分别出现了2字节和1字节的空闲碎片。如果应用E想要一个3字节的连续空间，显然是不能得到满足的。因为，虽然空间总量够，但却是碎片空间，并不是连续的。
 
@@ -3755,7 +3755,7 @@ used_memory_rss是操作系统实际分配给Redis的物理内存空间，里面
 
 我画一张图来解释一下。
 
-<img src="images/6480b6af5b2423b271ef3fb59f555842.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/6480b6af5b2423b271ef3fb59f555842.jpg" alt="img" style="zoom:25%;" />
 
 在进行碎片清理前，这段10字节的空间中分别有1个2字节和1个1字节的空闲空间，只是这两个空间并不连续。操作系统在清理碎片时，会先把应用D的数据拷贝到2字节的空闲空间中，并释放D原先所占的空间。然后，再把B的数据拷贝到D原来的空间中。这样一来，这段10字节空间的最后三个字节就是一块连续空间了。到这里，碎片清理结束。
 
@@ -3821,7 +3821,7 @@ config set activedefrag yes
 
 输入缓冲区会先把客户端发送过来的命令暂存起来，Redis主线程再从输入缓冲区中读取命令，进行处理。当Redis主线程处理完数据后，会把结果写入到输出缓冲区，再通过输出缓冲区返回给客户端，如下图所示：
 
-<img src="images/b86be61e91bd7ca207989c220991fce4.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/b86be61e91bd7ca207989c220991fce4.jpg" alt="img" style="zoom:25%;" />
 
 下面，我们就分别学习下输入缓冲区和输出缓冲区发生溢出的情况，以及相应的应对方案。
 
@@ -3939,7 +3939,7 @@ client-output-buffer-limit pubsub 8mb 2mb 60
 
 在全量复制过程中，主节点在向从节点传输RDB文件的同时，会继续接收客户端发送的写命令请求。这些写命令就会先保存在复制缓冲区中，等RDB文件传输完成后，再发送给从节点去执行。主节点上会为每个从节点都维护一个复制缓冲区，来保证主从节点间的数据同步。
 
-<img src="images/a39cd9a9f62c547e2069e6977239de7a.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/a39cd9a9f62c547e2069e6977239de7a.jpg" alt="img" style="zoom:25%;" />
 
 所以，如果在全量复制时，从节点接收和加载RDB较慢，同时主节点接收到了大量的写命令，写命令在复制缓冲区中就会越积越多，最终导致溢出。
 
@@ -3971,7 +3971,7 @@ config set client-output-buffer-limit slave 512mb 128mb 60
 
 主节点在把接收到的写命令同步给从节点时，同时会把这些写命令写入复制积压缓冲区。一旦从节点发生网络闪断，再次和主节点恢复连接后，从节点就会从复制积压缓冲区中，读取断连期间主节点接收到的写命令，进而进行增量同步，如下图所示：
 
-<img src="images/aedc9b41b31860e283c5d140bdb3318f.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/aedc9b41b31860e283c5d140bdb3318f.jpg" alt="img" style="zoom:25%;" />
 
 看到这里你是不是感觉有些熟悉？没错，我们在[第6讲](https://time.geekbang.org/column/article/272852)时已经学过复制积压缓冲区了，只不过我当时告诉你的是它的英文名字repl_backlog_buffer。所以这一讲，我们从缓冲区溢出的角度再来回顾下两个重点：复制积压缓冲区溢出的影响，以及如何应对复制积压缓冲区的溢出问题。
 
@@ -3999,239 +3999,6 @@ config set client-output-buffer-limit slave 512mb 128mb 60
 有了上面这些应对方法，我相信你在实际应用时，就可以避免缓冲区溢出带来的命令数据丢失、Redis崩溃的这些“惨案”了。
 
 
-
-# 第11～21讲思考题
-
-## [第11讲](https://time.geekbang.org/column/article/279649)
-
-**问题：除了String类型和Hash类型，还有什么类型适合保存第11讲中所说的图片吗？**
-
-答案：除了String和Hash，我们还可以使用Sorted Set类型进行保存。Sorted Set的元素有member值和score值，可以像Hash那样，使用二级编码进行保存。具体做法是，把图片ID的前7位作为Sorted Set的key，把图片ID的后3位作为member值，图片存储对象ID作为score值。
-
-Sorted Set中元素较少时，Redis会使用压缩列表进行存储，可以节省内存空间。不过，和Hash不一样，Sorted Set插入数据时，需要按score值的大小排序。当底层结构是压缩列表时，Sorted Set的插入性能就比不上Hash。所以，在我们这节课描述的场景中，Sorted Set类型虽然可以用来保存，但并不是最优选项。
-
-## [第12讲](https://time.geekbang.org/column/article/280680)
-
-问题：我在第12讲中介绍了4种典型的统计模式，分别是聚合统计、排序统计、二值状态统计和基数统计，以及它们各自适合的集合类型。你还遇到过其他的统计场景吗？用的是什么集合类型呢？
-
-答案：@海拉鲁同学在留言中提供了一种场景：他们曾使用List+Lua统计最近200个客户的触达率。具体做法是，每个List元素表示一个客户，元素值为0，代表触达；元素值为1，就代表未触达。在进行统计时，应用程序会把代表客户的元素写入队列中。当需要统计触达率时，就使用LRANGE key 0 -1 取出全部元素，计算0的比例，这个比例就是触达率。
-
-这个例子需要获取全部元素，不过数据量只有200个，不算大，所以，使用List，在实际应用中也是可以接受的。但是，如果数据量很大，又有其他查询需求的话（例如查询单个元素的触达情况），List的操作复杂度较高，就不合适了，可以考虑使用Hash类型。
-
-## [第13讲](https://time.geekbang.org/column/article/281745)
-
-问题：你在日常的实践过程中，还用过Redis的其他数据类型吗？
-
-答案：除了我们课程上介绍的5大基本数据类型，以及HyperLogLog、Bitmap、GEO，Redis还有一种数据类型，叫作布隆过滤器。它的查询效率很高，经常会用在缓存场景中，可以用来判断数据是否存在缓存中。我会在后面（第25讲）具体地介绍一下它。
-
-## [第14讲](https://time.geekbang.org/column/article/282478)
-
-问题：在用Sorted Set保存时间序列数据时，如果把时间戳作为score，把实际的数据作为member，这样保存数据有没有潜在的风险？另外，如果你是Redis的开发维护者，你会把聚合计算也设计为Sorted Set的一个内在功能吗？
-
-答案：Sorted Set和Set一样，都会对集合中的元素进行去重，也就是说，如果我们往集合中插入的member值，和之前已经存在的member值一样，那么，原来member的score就会被新写入的member的score覆盖。相同member的值，在Sorted Set中只会保留一个。
-
-对于时间序列数据来说，这种去重的特性是会带来数据丢失风险的。毕竟，某一时间段内的多个时间序列数据的值可能是相同的。如果我们往Sorted Set中写入的数据是在不同时刻产生的，但是写入的时刻不同，Sorted Set中只会保存一份最近时刻的数据。这样一来，其他时刻的数据就都没有保存下来。
-
-举个例子，在记录物联网设备的温度时，一个设备一个上午的温度值可能都是26。在Sorted Set中，我们把温度值作为member，把时间戳作为score。我们用ZADD命令把上午不同时刻的温度值写入Sorted Set。由于member值一样，所以只会把score更新为最新时间戳，最后只有一个最新时间戳（例如上午12点）下的温度值。这肯定是无法满足保存多个时刻数据的需求的。
-
-关于是否把聚合计算作为Sorted Set的内在功能，考虑到Redis的读写功能是由单线程执行，在进行数据读写时，本身就会消耗较多的CPU资源，如果再在Sorted Set中实现聚合计算，就会进一步增加CPU的资源消耗，影响到Redis的正常数据读取。所以，如果我是Redis的开发维护者，除非对Redis的线程模型做修改，比如说在Redis中使用额外的线程池做聚合计算，否则，我不会把聚合计算作为Redis的内在功能实现的。
-
-## [第15讲](https://time.geekbang.org/column/article/284291)
-
-问题：如果一个生产者发送给消息队列的消息，需要被多个消费者进行读取和处理（例如，一个消息是一条从业务系统采集的数据，既要被消费者1读取并进行实时计算，也要被消费者2读取并留存到分布式文件系统HDFS中，以便后续进行历史查询），你会使用Redis的什么数据类型来解决这个问题呢？
-
-答案：有同学提到，可以使用Streams数据类型的消费组，同时消费生产者的数据，这是可以的。但是，有个地方需要注意，如果只是使用一个消费组的话，消费组内的多个消费者在消费消息时是互斥的，换句话说，在一个消费组内，一个消息只能被一个消费者消费。我们希望消息既要被消费者1读取，也要被消费者2读取，是一个多消费者的需求。所以，如果使用消费组模式，需要让消费者1和消费者2属于不同的消费组，这样它们就能同时消费了。
-
-另外，Redis基于字典和链表数据结构，实现了发布和订阅功能，这个功能可以实现一个消息被多个消费者消费使用，可以满足问题中的场景需求。
-
-## [第16讲](https://time.geekbang.org/column/article/285000)
-
-问题：Redis的写操作（例如SET、HSET、SADD等）是在关键路径上吗？
-
-答案：Redis本身是内存数据库，所以，写操作都需要在内存上完成执行后才能返回，这就意味着，如果这些写操作处理的是大数据集，例如1万个数据，那么，主线程需要等这1万个数据都写完，才能继续执行后面的命令。所以说，Redis的写操作也是在关键路径上的。
-
-这个问题是希望你把面向内存和面向磁盘的写操作区分开。当一个写操作需要把数据写到磁盘时，一般来说，写操作只要把数据写到操作系统的内核缓冲区就行。不过，如果我们执行了同步写操作，那就必须要等到数据写回磁盘。所以，面向磁盘的写操作一般不会在关键路径上。
-
-我看到有同学说，根据写操作命令的返回值来决定是否在关键路径上，如果返回值是OK，或者客户端不关心是否写成功，那么，此时的写操作就不算在关键路径上。
-
-这个思路不错，不过，需要注意的是，客户端经常会阻塞等待发送的命令返回结果，在上一个命令还没有返回结果前，客户端会一直等待，直到返回结果后，才会发送下一个命令。此时，即使我们不关心返回结果，客户端也要等到写操作执行完成才行。所以，在不关心写操作返回结果的场景下，可以对Redis客户端做异步改造。具体点说，就是使用异步线程发送这些不关心返回结果的命令，而不是在Redis客户端中等待这些命令的结果。
-
-## [第17讲](https://time.geekbang.org/column/article/286082)
-
-问题：在一台有两个CPU Socket（每个Socket 8个物理核）的服务器上，我们部署了一个有着8个实例的Redis切片集群（8个实例都为主节点，没有主备关系），现在有两个方案：
-
-1. 在同一个CPU Socket上运行8个实例，并和8个CPU核绑定；
-2. 在两个CPU Socket上各运行4个实例，并和相应Socket上的核绑定。
-
-如果不考虑网络数据读取的影响，你会选择哪个方案呢？
-
-答案：建议使用第二个方案，主要有两方面的原因。
-
-1. 同一个CPU Socket上的进程，会共享L3缓存。如果把8个实例都部署在同一个Socket上，它们会竞争L3缓存，这就会导致它们的L3缓存命中率降低，影响访问性能。
-2. 同一个CPU Socket上的进程，会使用同一个Socket上的内存空间。8个实例共享同一个Socket上的内存空间，肯定会竞争内存资源。如果有实例保存的数据量大，其他实例能用到的内存空间可能就不够了，此时，其他实例就会跨Socket申请内存，进而造成跨Socket访问内存，造成实例的性能降低。
-
-另外，在切片集群中，不同实例间通过网络进行消息通信和数据迁移，并不会使用共享内存空间进行跨实例的数据访问。所以，即使把不同的实例部署到不同的Socket上，它们之间也不会发生跨Socket内存的访问，不会受跨Socket内存访问的负面影响。
-
-## [第18讲](https://time.geekbang.org/column/article/286549)
-
-问题：在Redis中，还有哪些命令可以代替KEYS命令，实现对键值对的key的模糊查询呢？这些命令的复杂度会导致Redis变慢吗？
-
-答案：Redis提供的SCAN命令，以及针对集合类型数据提供的SSCAN、HSCAN等，可以根据执行时设定的数量参数，返回指定数量的数据，这就可以避免像KEYS命令一样同时返回所有匹配的数据，不会导致Redis变慢。以HSCAN为例，我们可以执行下面的命令，从user这个Hash集合中返回key前缀以103开头的100个键值对。
-
-```
-HSCAN user 0  match "103*" 100
-```
-
-## ==[第19讲]==
-
-问题：你遇到过Redis变慢的情况吗？如果有的话，你是怎么解决的呢？
-
-答案：@Kaito同学在留言区分享了他排查Redis变慢问题的Checklist，而且还提供了解决方案，非常好，我把Kaito同学给出的导致Redis变慢的原因汇总并完善一下，分享给你：
-
-1. 使用复杂度过高的命令或一次查询全量数据；
-2. 操作bigkey；
-3. 大量key集中过期；
-4. 内存达到maxmemory；
-5. 客户端使用短连接和Redis相连；
-6. 当Redis实例的数据量大时，无论是生成RDB，还是AOF重写，都会导致fork耗时严重；
-7. AOF的写回策略为always，导致每个操作都要同步刷回磁盘；
-8. Redis实例运行机器的内存不足，导致swap发生，Redis需要到swap分区读取数据；
-9. 进程绑定CPU不合理；
-10. Redis实例运行机器上开启了透明内存大页机制；
-11. 网卡压力过大。
-
-## [第20讲](https://time.geekbang.org/column/article/289140)
-
-问题：我们可以使用mem_fragmentation_ratio来判断Redis当前的内存碎片率是否严重，我给出的经验阈值都是大于1的。我想请你思考一下，如果mem_fragmentation_ratio小于1，Redis的内存使用是什么情况呢？会对Redis的性能和内存空间利用率造成什么影响呢？
-
-答案：如果mem_fragmentation_ratio小于1，就表明，操作系统分配给Redis的内存空间已经小于Redis所申请的空间大小了，此时，运行Redis实例的服务器上的内存已经不够用了，可能已经发生swap了。这样一来，Redis的读写性能也会受到影响，因为Redis实例需要在磁盘上的swap分区中读写数据，速度较慢。
-
-## [第21讲](https://time.geekbang.org/column/article/291277)
-
-问题：在和Redis实例交互时，应用程序中使用的客户端需要使用缓冲区吗？如果使用的话，对Redis的性能和内存使用会有影响吗？
-
-答案：应用程序中使用的Redis客户端，需要把要发送的请求暂存在缓冲区。这有两方面的好处。
-
-一方面，可以在客户端控制发送速率，避免把过多的请求一下子全部发到Redis实例，导致实例因压力过大而性能下降。不过，客户端缓冲区不会太大，所以，对Redis实例的内存使用没有什么影响。
-
-另一方面，在应用Redis主从集群时，主从节点进行故障切换是需要一定时间的，此时，主节点无法服务外来请求。如果客户端有缓冲区暂存请求，那么，客户端仍然可以正常接收业务应用的请求，这就可以避免直接给应用返回无法服务的错误。
-
-## ==代表性问题==
-
-在前面的课程中，我重点介绍了避免Redis变慢的方法。慢查询命令的执行时间和bigkey操作的耗时都很长，会阻塞Redis。很多同学学完之后，知道了要尽量避免Redis阻塞，但是还不太清楚，具体应该如何排查阻塞的命令和bigkey呢。
-
-所以，接下来，我就再重点解释一下，如何排查慢查询命令，以及如何排查bigkey。
-
-**问题1：如何使用慢查询日志和latency monitor排查执行慢的操作？**
-
-在第18讲中，我提到，可以使用Redis日志（慢查询日志）和latency monitor来排查执行较慢的命令操作，那么，我们该如何使用慢查询日志和latency monitor呢？
-
-Redis的慢查询日志记录了执行时间超过一定阈值的命令操作。当我们发现Redis响应变慢、请求延迟增加时，就可以在慢查询日志中进行查找，确定究竟是哪些命令执行时间很长。
-
-在使用慢查询日志前，我们需要设置两个参数。
-
-- **slowlog-log-slower-than**：这个参数表示，慢查询日志对执行时间大于多少微秒的命令进行记录。
-- **slowlog-max-len**：这个参数表示，慢查询日志最多能记录多少条命令记录。慢查询日志的底层实现是一个具有预定大小的先进先出队列，一旦记录的命令数量超过了队列长度，最先记录的命令操作就会被删除。这个值默认是128。但是，如果慢查询命令较多的话，日志里就存不下了；如果这个值太大了，又会占用一定的内存空间。所以，一般建议设置为1000左右，这样既可以多记录些慢查询命令，方便排查，也可以避免内存开销。
-
-设置好参数后，慢查询日志就会把执行时间超过slowlog-log-slower-than阈值的命令操作记录在日志中。
-
-我们可以使用SLOWLOG GET命令，来查看慢查询日志中记录的命令操作，例如，我们执行如下命令，可以查看最近的一条慢查询的日志信息。
-
-```
-SLOWLOG GET 1
-1) 1) (integer) 33           //每条日志的唯一ID编号
-   2) (integer) 1600990583   //命令执行时的时间戳
-   3) (integer) 20906        //命令执行的时长，单位是微秒
-   4) 1) "keys"               //具体的执行命令和参数
-      2) "abc*"
-   5) "127.0.0.1:54793"      //客户端的IP和端口号
-   6) ""                     //客户端的名称，此处为空
-```
-
-可以看到，KEYS "abc*"这条命令的执行时间是20906微秒，大约20毫秒，的确是一条执行较慢的命令操作。如果我们想查看更多的慢日志，只要把SLOWLOG GET后面的数字参数改为想查看的日志条数，就可以了。
-
-好了，有了慢查询日志后，我们就可以快速确认，究竟是哪些命令的执行时间比较长，然后可以反馈给业务部门，让业务开发人员避免在应用Redis的过程中使用这些命令，或是减少操作的数据量，从而降低命令的执行复杂度。
-
-除了慢查询日志以外，Redis从2.8.13版本开始，还提供了latency monitor监控工具，这个工具可以用来监控Redis运行过程中的峰值延迟情况。
-
-和慢查询日志的设置相类似，要使用latency monitor，首先要设置命令执行时长的阈值。当一个命令的实际执行时长超过该阈值时，就会被latency monitor监控到。比如，我们可以把latency monitor监控的命令执行时长阈值设为1000微秒，如下所示：
-
-```
-config set latency-monitor-threshold 1000
-```
-
-设置好了latency monitor的参数后，我们可以使用latency latest命令，查看最新和最大的超过阈值的延迟情况，如下所示：
-
-```
-latency latest
-1) 1) "command"
-   2) (integer) 1600991500    //命令执行的时间戳
-   3) (integer) 2500           //最近的超过阈值的延迟
-   4) (integer) 10100          //最大的超过阈值的延迟
-```
-
-==**问题2：如何排查Redis的bigkey？**==
-
-在应用Redis时，我们要尽量避免bigkey的使用，这是因为，Redis主线程在操作bigkey时，会被阻塞。那么，一旦业务应用中使用了bigkey，我们该如何进行排查呢？
-
-Redis可以在执行redis-cli命令时带上–bigkeys选项，进而对整个数据库中的键值对大小情况进行统计分析，比如说，统计每种数据类型的键值对个数以及平均大小。此外，这个命令执行后，会输出每种数据类型中最大的bigkey的信息，对于String类型来说，会输出最大bigkey的字节长度，对于集合类型来说，会输出最大bigkey的元素个数，如下所示：
-
-```
-./redis-cli  --bigkeys
-
--------- summary -------
-Sampled 32 keys in the keyspace!
-Total key length in bytes is 184 (avg len 5.75)
-
-//统计每种数据类型中元素个数最多的bigkey
-Biggest   list found 'product1' has 8 items
-Biggest   hash found 'dtemp' has 5 fields
-Biggest string found 'page2' has 28 bytes
-Biggest stream found 'mqstream' has 4 entries
-Biggest    set found 'userid' has 5 members
-Biggest   zset found 'device:temperature' has 6 members
-
-//统计每种数据类型的总键值个数，占所有键值个数的比例，以及平均大小
-4 lists with 15 items (12.50% of keys, avg size 3.75)
-5 hashs with 14 fields (15.62% of keys, avg size 2.80)
-10 strings with 68 bytes (31.25% of keys, avg size 6.80)
-1 streams with 4 entries (03.12% of keys, avg size 4.00)
-7 sets with 19 members (21.88% of keys, avg size 2.71)
-5 zsets with 17 members (15.62% of keys, avg size 3.40)
-```
-
-不过，在使用–bigkeys选项时，有一个地方需要注意一下。这个工具是通过扫描数据库来查找bigkey的，所以，在执行的过程中，会对Redis实例的性能产生影响。如果你在使用主从集群，我建议你在从节点上执行该命令。因为主节点上执行时，会阻塞主节点。如果没有从节点，那么，我给你两个小建议：第一个建议是，在Redis实例业务压力的低峰阶段进行扫描查询，以免影响到实例的正常运行；第二个建议是，可以使用-i参数控制扫描间隔，避免长时间扫描降低Redis实例的性能。例如，我们执行如下命令时，redis-cli会每扫描100次暂停100毫秒（0.1秒）。
-
-```
-./redis-cli  --bigkeys -i 0.1
-```
-
-当然，使用Redis自带的–bigkeys选项排查bigkey，有两个不足的地方：
-
-1. 这个方法只能返回每种类型中最大的那个bigkey，无法得到大小排在前N位的bigkey；
-2. 对于集合类型来说，这个方法只统计集合元素个数的多少，而不是实际占用的内存量。但是，一个集合中的元素个数多，并不一定占用的内存就多。因为，有可能每个元素占用的内存很小，这样的话，即使元素个数有很多，总内存开销也不大。
-
-所以，如果我们想统计每个数据类型中占用内存最多的前N个bigkey，可以自己开发一个程序，来进行统计。
-
-我给你提供一个基本的开发思路：使用SCAN命令对数据库扫描，然后用TYPE命令获取返回的每一个key的类型。接下来，对于String类型，可以直接使用STRLEN命令获取字符串的长度，也就是占用的内存空间字节数。
-
-对于集合类型来说，有两种方法可以获得它占用的内存大小。
-
-如果你能够预先从业务层知道集合元素的平均大小，那么，可以使用下面的命令获取集合元素的个数，然后乘以集合元素的平均大小，这样就能获得集合占用的内存大小了。
-
-- List类型：LLEN命令；
-- Hash类型：HLEN命令；
-- Set类型：SCARD命令；
-- Sorted Set类型：ZCARD命令；
-
-如果你不能提前知道写入集合的元素大小，可以使用MEMORY USAGE命令（需要Redis 4.0及以上版本），查询一个键值对占用的内存空间。例如，执行以下命令，可以获得key为user:info这个集合类型占用的内存空间大小。
-
-```
-MEMORY USAGE user:info
-(integer) 315663239
-```
-
-这样一来，你就可以在开发的程序中，把每一种数据类型中的占用内存空间大小排在前 N 位的key统计出来，这也就是每个数据类型中的前N个bigkey。
 
 
 
@@ -4264,7 +4031,7 @@ MEMORY USAGE user:info
 
 > ​	为了让你能更好地理解，**我以计算机系统为例**，来解释一下。下图是计算机系统中的三层存储结构，以及它们各自的常用容量和访问性能。最上面是处理器，中间是内存，最下面是磁盘。
 >
-> <img src="images/ac80f6e1714f3e1e8eabcfd8da3d689c.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/ac80f6e1714f3e1e8eabcfd8da3d689c.jpg" alt="img" style="zoom:25%;" />
 >
 > 从图上可以看到，CPU、内存和磁盘这三层的访问速度从几十ns到100ns，再到几ms，性能的差异很大。
 >
@@ -4276,7 +4043,7 @@ MEMORY USAGE user:info
 >
 > - 内存中的高速页缓存，**即page cache**，用来缓存磁盘中的数据，避免每次从磁盘中存取数据。
 >
->   <img src="images/7dyycf727f9396eb9788644474855a44-20230628170520272.jpg" alt="img" style="zoom:25%;" />
+>   <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/7dyycf727f9396eb9788644474855a44-20230628170520272.jpg" alt="img" style="zoom:25%;" />
 
 跟内存相比，LLC的访问速度更快，而跟磁盘相比，内存的访问是更快的。所以，我们可以看出来缓存的**第一个特征**：在一个层次化的系统中，缓存一定是一个快速子系统，数据存在缓存中时，能避免每次从慢速子系统中存取数据。对应到互联网应用来说，Redis就是快速子系统，而数据库就是慢速子系统了。
 
@@ -4295,7 +4062,7 @@ MEMORY USAGE user:info
 
 我画了一张图，清晰地展示了发生缓存命中或缺失时，应用读取数据的情况，你可以看下这张图片。
 
-<img src="images/6b0b489ec0c1c5049c8df84d77fa243d.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/6b0b489ec0c1c5049c8df84d77fa243d.jpg" alt="img" style="zoom:25%;" />
 
 到这里，你可能已经发现了，使用Redis缓存时，我们基本有三个操作：
 
@@ -4359,7 +4126,7 @@ else
 
 > ​	我给你举个例子。假设业务应用要修改数据A，此时，数据A在Redis中也缓存了，那么，应用会先直接在数据库里修改A，并把Redis中的A删除。等到应用需要读取数据A时，会发生缓存缺失，此时，应用从数据库中读取A，并写入Redis，以便后续请求从缓存中直接读取，如下图所示：
 
-<img src="images/464ea24a098c87b9d292cf61a2b2fecd.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/464ea24a098c87b9d292cf61a2b2fecd.jpg" alt="img" style="zoom:25%;" />
 
 **只读缓存直接在数据库中更新数据的好处是**，所有最新的数据都在数据库中，而数据库是提供数据可靠性保障的，这些数据不会有丢失的风险。当我们需要缓存图片、短视频这些用户只读的数据时，就可以使用只读缓存这个类型了。
 
@@ -4387,7 +4154,7 @@ else
 
 - 这样一来，处理这些数据的操作是在缓存中进行的，很快就能完成。只不过，如果发生了掉电，而它们还没有被写回数据库，就会有丢失的风险了。
 
-<img src="images/009d055bb91d42c28b9316c649f87f66.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/009d055bb91d42c28b9316c649f87f66.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -4440,7 +4207,7 @@ Redis做缓存时，还有两种模式，分别是**只读缓存**和读写缓�
 
 我们先看看蓝线。它表示的就是“八二原理”，有20%的数据贡献了80%的访问了，而剩余的数据虽然体量很大，但只贡献了20%的访问量。这80%的数据在访问量上就形成了一条长长的尾巴，我们也称为“长尾效应”。
 
-<img src="images/986ed247a4353524f387f0bbf76586e4.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/986ed247a4353524f387f0bbf76586e4.jpg" alt="img" style="zoom:25%;" />
 
 所以，如果按照“八二原理”来设置缓存空间容量，也就是把缓存空间容量设置为总数据量的20%的话，就有可能拦截到80%的访问。
 
@@ -4470,7 +4237,7 @@ Redis 4.0之前一共实现了6种内存淘汰策略，在4.0之后，又增加�
 - 在**设置了过期时间的数据**中进行淘汰，包括volatile-random、volatile-ttl、volatile-lru、volatile-lfu（Redis 4.0后新增）四种。
 - 在**所有数据范围内**进行淘汰，包括allkeys-lru、allkeys-random、allkeys-lfu（Redis 4.0后新增）三种。
 
-![img](images/04bdd13b760016ec3b30f4b02e133df6.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/04bdd13b760016ec3b30f4b02e133df6.jpg)
 
 接下来，我们就看看volatile-lru和allkeys-lru策略都用到的LRU算法吧。
 
@@ -4478,7 +4245,7 @@ Redis 4.0之前一共实现了6种内存淘汰策略，在4.0之后，又增加�
 
 - LRU会把所有的数据组织成一个链表，链表的头和尾分别表示MRU端和LRU端，分别代表最近最常使用的数据和最近最不常用的数据。
 
-<img src="images/0201f85c84203300ae4085c60e955yy5.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/0201f85c84203300ae4085c60e955yy5.jpg" alt="img" style="zoom:25%;" />
 
 缺点：LRU算法在实际实现时，需要用链表管理所有的缓存数据，这会**带来额外的空间开销**。而且，当有数据被访问时，需要在链表上把该数据移动到MRU端，如果有大量数据被访问，就会带来很多链表移动操作，会很耗时，进而会降低Redis缓存性能。
 
@@ -4490,7 +4257,7 @@ Redis 4.0之前一共实现了6种内存淘汰策略，在4.0之后，又增加�
 
 一般来说，一旦被淘汰的数据选定后，如果这个数据是干净数据，那么我们就直接删除；如果**这个数据是脏数据，我们需要把它写回数据库**，如下图所示：
 
-<img src="images/953e48912yy9515abf9db588d447cc5e.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/953e48912yy9515abf9db588d447cc5e.jpg" alt="img" style="zoom:25%;" />
 
 那怎么判断一个数据到底是干净的还是脏的呢？
 
@@ -4524,7 +4291,7 @@ Redis 4.0之前一共实现了6种内存淘汰策略，在4.0之后，又增加�
 
 **2、只读缓存比较复杂**
 
-<img src="images/11ae5e620c63de76448bc658fe6a496f.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/11ae5e620c63de76448bc658fe6a496f.jpg" alt="img" style="zoom: 25%;" />
 
 ==在大多数业务场景下，我们会把 Redis 作为只读缓存使用。==
 
@@ -4541,7 +4308,7 @@ Redis 4.0之前一共实现了6种内存淘汰策略，在4.0之后，又增加�
 
 这节课，我们学习了缓存雪崩、击穿和穿透这三类异常问题。从问题成因来看，缓存雪崩和击穿主要是因为数据不在缓存中了，而缓存穿透则是因为数据既不在缓存中，也不在数据库中。所以，缓存雪崩或击穿时，一旦数据库中的数据被再次写入到缓存后，应用又可以在缓存中快速访问数据了，数据库的压力也会相应地降低下来，而缓存穿透发生时，Redis 缓存和数据库会同时持续承受请求压力。
 
-<img src="images/b5bd931239be18bef24b2ef36c70e9e1.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/b5bd931239be18bef24b2ef36c70e9e1.jpg" alt="img" style="zoom: 25%;" />
 
 
 
@@ -4618,7 +4385,7 @@ Redis 4.0之前一共实现了6种内存淘汰策略，在4.0之后，又增加�
 >
 > 如果我们对临界区代码的执行没有控制机制，就会出现数据更新错误。在刚才的例子中，假设现在有两个客户端 A 和 B，同时执行刚才的临界区代码，就会出现错误，你可以看下下面这张图。
 >
-> <img src="images/dce821cd00c1937b4aab1f130424335c.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/dce821cd00c1937b4aab1f130424335c.jpg" alt="img" style="zoom:25%;" />
 
 为了保证数据并发修改的正确性，我们可以**用锁把并行操作变成串行操作**，串行操作就具有互斥性。一个客户端持有锁后，**其他客户端只能等到锁释放，**才能拿锁再进行修改。
 
@@ -4782,7 +4549,7 @@ Redis既可以基于单个Redis节点来实现，也可以使用多个Redis节�
 
 我们要赋予锁变量一个变量名，把这个变量名作为键值对的键，而锁变量的值，则是键值对的值，为了帮助你理解，我画了一张图片，它展示Redis使用键值对保存锁变量，以及两个客户端同时请求加锁的操作过程。
 
-<img src="images/1d18742c1e5fc88835ec27f1becfc145.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/1d18742c1e5fc88835ec27f1becfc145.jpg" alt="img" style="zoom:25%;" />
 
 可以看到，Redis可以使用**一个键值对lock_key : 0来保存锁变量**，其中，键是lock_key，也是锁变量的名称，锁变量的初始值是0。
 
@@ -4790,7 +4557,7 @@ Redis既可以基于单个Redis节点来实现，也可以使用多个Redis节�
 
 我还是借助一张图片来解释一下。这张图片展示了客户端A请求释放锁的过程。当客户端A持有锁时，锁变量lock_key的值为1。客户端A执行释放锁操作后，Redis将lock_key的值置为0，表明已经没有客户端持有锁了。
 
-<img src="images/c7c413b47d42f06f08fce92404f31e82.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c7c413b47d42f06f08fce92404f31e82.jpg" alt="img" style="zoom:25%;" />
 
 因为**加锁包含了三个操作（读取锁变量、判断锁变量值以及把锁变量值设置为1）**，而这三个操作在执行时需要保证原子性。那怎么保证原子性呢？
 
@@ -5069,11 +4836,11 @@ DEL lock_key
 
   > ​	WATCH机制的具体实现是由WATCH命令实现的，我给你举个例子，你可以看下下面的图，进一步理解下WATCH命令的使用。
   >
-  > <img src="images/4f8589410f77df16311dd29131676373.jpg" alt="img" style="zoom:25%;" />
+  > <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/4f8589410f77df16311dd29131676373.jpg" alt="img" style="zoom:25%;" />
   >
   > 如果没有使用WATCH机制，在EXEC命令前执行的并发操作是会对数据进行读写的。而且，在执行EXEC命令的时候，事务要操作的数据已经改变了，在这种情况下，Redis并没有做到让事务对其它操作隔离，隔离性也就没有得到保障。下面这张图显示了没有WATCH机制时的情况，你可以看下。
   >
-  > <img src="images/8ca37debfff91282b9c62a25fd7e9a57.jpg" alt="img" style="zoom:25%;" />
+  > <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/8ca37debfff91282b9c62a25fd7e9a57.jpg" alt="img" style="zoom:25%;" />
 
 **下面我再来说一说第二种情况：**并发操作在EXEC命令之后被服务器端接收并执行。
 
@@ -5145,7 +4912,7 @@ DEL lock_key
   >
   > 我们在应用Redis时，可以周期性地运行这个流程来监测主从库间的不一致情况。为了帮助你更好地理解这个方法，我画了一张流程图，你可以看下。
   >
-  > <img src="images/3a89935297fb5b76bfc4808128aaf905.jpg" alt="img" style="zoom:25%;" />
+  > <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/3a89935297fb5b76bfc4808128aaf905.jpg" alt="img" style="zoom:25%;" />
   >
   > 当然，监控程序可以一直监控着从库的复制进度，当从库的复制进度又赶上主库时，我们就允许客户端再次跟这些从库连接。
 
@@ -5184,7 +4951,7 @@ DEL lock_key
   >
   > 这4个命令的参数和含义如下表所示：
   >
-  > <img src="images/06e8cb2f1af320d450a29326a876f4e1.jpg" alt="img" style="zoom:25%;" />
+  > <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/06e8cb2f1af320d450a29326a876f4e1.jpg" alt="img" style="zoom:25%;" />
   >
   > 为了方便你理解，我给你举两个例子。
   >
@@ -5243,7 +5010,7 @@ bind 192.168.10.3 192.168.10.4 192.168.10.5
 
 为了方便你掌握，我把这些坑的成因和解决方法汇总在下面的这张表中，你可以再回顾下。
 
-<img src="images/9fb7a033987c7b5edc661f4de58ef093.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/9fb7a033987c7b5edc661f4de58ef093.jpg" alt="img" style="zoom:25%;" />
 
 简单地总结下刚刚学过的这两个典型的坑。
 
@@ -5268,7 +5035,7 @@ bind 192.168.10.3 192.168.10.4 192.168.10.5
 
 如下图所示，新写入主库的数据a:1、b:3，就因为在主库故障前未同步到从库而丢失了。
 
-<img src="images/46a7bef9a7074b6a46978c2524f92ea4.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/46a7bef9a7074b6a46978c2524f92ea4.jpg" alt="img" style="zoom:25%;" />
 
 - 如果是这种情况的数据丢失，我们可以通过比对主从库上的复制进度差值来进行判断，也就是计算master_repl_offset和slave_repl_offset的差值。如果从库上的slave_repl_offset小于原主库的master_repl_offset，那么，我们就可以认定数据丢失是由数据同步未完成导致的。
 
@@ -5298,7 +5065,7 @@ bind 192.168.10.3 192.168.10.4 192.168.10.5
 
 为了帮助你加深理解，我再画一张图，展示一下脑裂的发生过程。
 
-<img src="images/1339e1bfe6d07da8477342ba5fyy9872.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/1339e1bfe6d07da8477342ba5fyy9872.jpg" alt="img" style="zoom:25%;" />
 
 弄清楚了脑裂发生的原因后，我们又结合主从切换的原理过程进行了分析，很快就找到数据丢失的原因了。
 
@@ -5308,7 +5075,7 @@ bind 192.168.10.3 192.168.10.4 192.168.10.5
 
 下面这张图直观地展示了原主库数据丢失的过程。
 
-<img src="images/959240fa59c2bb9f5ddb7df4b318af66.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/959240fa59c2bb9f5ddb7df4b318af66.jpg" alt="img" style="zoom:25%;" />
 
 到这里，我们就完全弄明白了这个问题的发生过程和原因。
 
@@ -5365,7 +5132,7 @@ Codis集群中包含了4类关键组件。
 
 我用一张图来展示下Codis集群的架构和关键组件。
 
-<img src="images/c726e3c5477558fa1dba13c6ae8a77a5.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c726e3c5477558fa1dba13c6ae8a77a5.jpg" alt="img" style="zoom:25%;" />
 
 我来给你具体解释一下Codis是如何处理请求的。
 
@@ -5377,7 +5144,7 @@ Codis集群中包含了4类关键组件。
 
 我来用一张图展示这个处理流程：
 
-<img src="images/f76df33a4eba1ebddfd5450745yy83e5.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f76df33a4eba1ebddfd5450745yy83e5.jpg" alt="img" style="zoom:25%;" />
 
 好了，了解了Codis集群架构和基本流程后，接下来，我就围绕影响切片集群使用效果的4方面技术因素：数据分布、集群扩容和数据迁移、客户端兼容性、可靠性保证，来和你聊聊它们的具体设计选择和原理，帮你掌握Codis的具体用法。
 
@@ -5395,7 +5162,7 @@ Codis集群中包含了4类关键组件。
 
 我来举个例子。下图显示的就是数据、Slot和codis server的映射保存关系。其中，Slot 0和1被分配到了server1，Slot 2分配到server2，Slot 1022和1023被分配到server8。当客户端访问key 1和key 2时，这两个数据的CRC32值对1024取模后，分别是1和1022。因此，它们会被保存在Slot 1和Slot 1022上，而Slot 1和Slot 1022已经被分配到codis server 1和8上了。这样一来，key 1和key 2的保存位置就很清楚了。
 
-<img src="images/77cb1b860cfa5aac9f0a0f7b780fbeyy.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/77cb1b860cfa5aac9f0a0f7b780fbeyy.jpg" alt="img" style="zoom:25%;" />
 
 数据key和Slot的映射关系是客户端在读写数据前直接通过CRC32计算得到的，而Slot和codis server的映射关系是通过分配完成的，所以就需要用一个存储系统保存下来，否则，如果集群有故障了，映射关系就会丢失。
 
@@ -5403,7 +5170,7 @@ Codis集群中包含了4类关键组件。
 
 你可以看下这张图，它显示了路由表的分配和使用过程。
 
-<img src="images/d1a53f8b23d410f320ef145fd47c97b1.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/d1a53f8b23d410f320ef145fd47c97b1.jpg" alt="img" style="zoom:25%;" />
 
 在数据分布的实现方法上，Codis和Redis Cluster很相似，都采用了key映射到Slot、Slot再分配到实例上的机制。
 
@@ -5434,7 +5201,7 @@ Codis集群按照Slot的粒度进行数据迁移，我们来看下迁移的基�
 
 我画了下面这张图，显示了数据迁移的流程，你可以看下加深理解。
 
-<img src="images/e01c7806b51b196097c393a079436d6b.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/e01c7806b51b196097c393a079436d6b.jpg" alt="img" style="zoom:25%;" />
 
 针对刚才介绍的单个数据的迁移过程，Codis实现了两种迁移模式，分别是同步迁移和异步迁移，我们来具体看下。
 
@@ -5464,7 +5231,7 @@ Codis集群按照Slot的粒度进行数据迁移，我们来看下迁移的基�
 
 此时，codis proxy的访问连接信息都会保存在Zookeeper上。所以，当新增了proxy后，Zookeeper上会有最新的访问列表，客户端也就可以从Zookeeper上读取proxy访问列表，把请求发送给新增的proxy。这样一来，客户端的访问压力就可以在多个proxy上分担处理了，如下图所示：
 
-<img src="images/707767936a6fb2d7686c84d81c048423.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/707767936a6fb2d7686c84d81c048423.jpg" alt="img" style="zoom:25%;" />
 
 好了，到这里，我们就了解了Codis集群中的数据分布、集群扩容和数据迁移的方法，这都是切片集群中的关键机制。
 
@@ -5496,7 +5263,7 @@ codis server其实就是Redis实例，只不过增加了和集群操作相关的
 
 下图展示的是配置了server group的Codis集群架构。在Codis集群中，我们通过部署server group和哨兵集群，实现codis server的主从切换，提升集群可靠性。
 
-<img src="images/0282beb10f5c42c1f12c89afbe03af4a.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/0282beb10f5c42c1f12c89afbe03af4a.jpg" alt="img" style="zoom:25%;" />
 
 因为codis proxy和Zookeeper这两个组件是搭配在一起使用的，所以，接下来，我们再来看下这两个组件的可靠性。
 
@@ -5510,7 +5277,7 @@ codis server其实就是Redis实例，只不过增加了和集群操作相关的
 
 到这里，Codis和Redis Cluster这两种切片集群方案我们就学完了，我把它们的区别总结在了一张表里，你可以对比看下。
 
-<img src="images/8fec8c2f76e32647d055ae6ed8cfbab8.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/8fec8c2f76e32647d055ae6ed8cfbab8.jpg" alt="img" style="zoom:25%;" />
 
 最后，在实际应用的时候，对于这两种方案，我们该怎么选择呢？我再给你提4条建议。
 
@@ -5601,7 +5368,7 @@ codis server其实就是Redis实例，只不过增加了和集群操作相关的
 
 下图显示了在秒杀场景中需要Redis参与的两个环节：
 
-<img src="images/7c3e5def912d7c8c45bca00f955d751b.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/7c3e5def912d7c8c45bca00f955d751b.jpg" alt="img" style="zoom: 25%;" />
 
 
 
@@ -5730,7 +5497,7 @@ else
 
 当数据量倾斜发生时，数据在切片集群的多个实例上分布不均衡，大量数据集中到了一个或几个实例上，如下图所示：
 
-<img src="images/2cb89b2d1b319fb43a5d1b94d7929685.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/2cb89b2d1b319fb43a5d1b94d7929685.jpg" alt="img" style="zoom:25%;" />
 
 那么，数据量倾斜是怎么产生的呢？
 
@@ -5766,7 +5533,7 @@ Hash Tag 是指加在键值对 key 中的一对花括号{}。这对括号会把 
 
 下面这张表就显示了使用 Hash Tag 后，数据被映射到相同 Slot 的情况，你可以看下。
 
-> <img src="images/d560b0161f1f786328dbd8a1df66d036.jpg" alt="img" style="zoom:25%;" />	
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/d560b0161f1f786328dbd8a1df66d036.jpg" alt="img" style="zoom:25%;" />	
 >
 > 其中，user:profile:{3231}和 user:order:{3231}的 Hash Tag 一样，都是 3231，它们的 CRC16 计算值对 16384 取模后的值也是一样的，所以就对应映射到了相同的 Slot 1024 中。user:profile:{5328}和 user:order:{5328}也是相同的映射结果。
 
@@ -5786,7 +5553,7 @@ Hash Tag 是指加在键值对 key 中的一对花括号{}。这对括号会把 
 
 一旦热点数据被存在了某个实例中，那么，这个实例的请求访问量就会远高于其它实例，面临巨大的访问压力，如下图所示：
 
-<img src="images/94b1ca50143db1d09c60475fa7b41820.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/94b1ca50143db1d09c60475fa7b41820.jpg" alt="img" style="zoom:25%;" />
 
 **和数据量倾斜不同，热点数据通常是一个或几个数据，所以，直接重新分配 Slot 并不能解决热点数据的问题。**
 
@@ -5814,7 +5581,7 @@ Hash Tag 是指加在键值对 key 中的一对花括号{}。这对括号会把 
 
 - **为了应对数据倾斜问题，**我给你介绍了四个方法，也分别对应了造成数据倾斜的四个原因。
 
-  <img src="images/092da1ee7425d20b1af4900ec8e9926f.jpg" alt="img" style="zoom:25%;" />
+  <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/092da1ee7425d20b1af4900ec8e9926f.jpg" alt="img" style="zoom:25%;" />
 
   我把它们总结在下表中，你可以看下。当然，如果已经发生了数据倾斜，我们可以通过数据迁移来缓解数据倾斜的影响。Redis Cluster 和 Codis 集群都提供了查看 Slot 分配和手工迁移 Slot 的命令，你可以把它们应用起来。
 
@@ -5842,7 +5609,7 @@ Gossip协议的工作原理可以概括成两点。
 
 下图显示了两个实例间进行PING、PONG消息传递的情况。
 
-![img](images/5eacfc36c4233ae7c99f80b1511yyb86.jpg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/5eacfc36c4233ae7c99f80b1511yyb86.jpg)
 
 Gossip协议可以保证在一段时间后，集群中的每一个实例都能获得其它所有实例的状态信息。
 
@@ -5956,79 +5723,238 @@ tcpdump host 192.168.10.3 port 16379 -i 网卡名 -w /tmp/r1.cap
 
 
 
+# 第11～21讲思考题
 
+## [第11讲](https://time.geekbang.org/column/article/279649)
 
+**问题：除了String类型和Hash类型，还有什么类型适合保存第11讲中所说的图片吗？**
 
+答案：除了String和Hash，我们还可以使用Sorted Set类型进行保存。Sorted Set的元素有member值和score值，可以像Hash那样，使用二级编码进行保存。具体做法是，把图片ID的前7位作为Sorted Set的key，把图片ID的后3位作为member值，图片存储对象ID作为score值。
 
+Sorted Set中元素较少时，Redis会使用压缩列表进行存储，可以节省内存空间。不过，和Hash不一样，Sorted Set插入数据时，需要按score值的大小排序。当底层结构是压缩列表时，Sorted Set的插入性能就比不上Hash。所以，在我们这节课描述的场景中，Sorted Set类型虽然可以用来保存，但并不是最优选项。
 
+## [第12讲](https://time.geekbang.org/column/article/280680)
 
+问题：我在第12讲中介绍了4种典型的统计模式，分别是聚合统计、排序统计、二值状态统计和基数统计，以及它们各自适合的集合类型。你还遇到过其他的统计场景吗？用的是什么集合类型呢？
 
+答案：@海拉鲁同学在留言中提供了一种场景：他们曾使用List+Lua统计最近200个客户的触达率。具体做法是，每个List元素表示一个客户，元素值为0，代表触达；元素值为1，就代表未触达。在进行统计时，应用程序会把代表客户的元素写入队列中。当需要统计触达率时，就使用LRANGE key 0 -1 取出全部元素，计算0的比例，这个比例就是触达率。
 
+这个例子需要获取全部元素，不过数据量只有200个，不算大，所以，使用List，在实际应用中也是可以接受的。但是，如果数据量很大，又有其他查询需求的话（例如查询单个元素的触达情况），List的操作复杂度较高，就不合适了，可以考虑使用Hash类型。
 
+## [第13讲](https://time.geekbang.org/column/article/281745)
 
+问题：你在日常的实践过程中，还用过Redis的其他数据类型吗？
 
+答案：除了我们课程上介绍的5大基本数据类型，以及HyperLogLog、Bitmap、GEO，Redis还有一种数据类型，叫作布隆过滤器。它的查询效率很高，经常会用在缓存场景中，可以用来判断数据是否存在缓存中。我会在后面（第25讲）具体地介绍一下它。
 
+## [第14讲](https://time.geekbang.org/column/article/282478)
 
+问题：在用Sorted Set保存时间序列数据时，如果把时间戳作为score，把实际的数据作为member，这样保存数据有没有潜在的风险？另外，如果你是Redis的开发维护者，你会把聚合计算也设计为Sorted Set的一个内在功能吗？
 
+答案：Sorted Set和Set一样，都会对集合中的元素进行去重，也就是说，如果我们往集合中插入的member值，和之前已经存在的member值一样，那么，原来member的score就会被新写入的member的score覆盖。相同member的值，在Sorted Set中只会保留一个。
 
+对于时间序列数据来说，这种去重的特性是会带来数据丢失风险的。毕竟，某一时间段内的多个时间序列数据的值可能是相同的。如果我们往Sorted Set中写入的数据是在不同时刻产生的，但是写入的时刻不同，Sorted Set中只会保存一份最近时刻的数据。这样一来，其他时刻的数据就都没有保存下来。
 
+举个例子，在记录物联网设备的温度时，一个设备一个上午的温度值可能都是26。在Sorted Set中，我们把温度值作为member，把时间戳作为score。我们用ZADD命令把上午不同时刻的温度值写入Sorted Set。由于member值一样，所以只会把score更新为最新时间戳，最后只有一个最新时间戳（例如上午12点）下的温度值。这肯定是无法满足保存多个时刻数据的需求的。
 
+关于是否把聚合计算作为Sorted Set的内在功能，考虑到Redis的读写功能是由单线程执行，在进行数据读写时，本身就会消耗较多的CPU资源，如果再在Sorted Set中实现聚合计算，就会进一步增加CPU的资源消耗，影响到Redis的正常数据读取。所以，如果我是Redis的开发维护者，除非对Redis的线程模型做修改，比如说在Redis中使用额外的线程池做聚合计算，否则，我不会把聚合计算作为Redis的内在功能实现的。
 
+## [第15讲](https://time.geekbang.org/column/article/284291)
 
+问题：如果一个生产者发送给消息队列的消息，需要被多个消费者进行读取和处理（例如，一个消息是一条从业务系统采集的数据，既要被消费者1读取并进行实时计算，也要被消费者2读取并留存到分布式文件系统HDFS中，以便后续进行历史查询），你会使用Redis的什么数据类型来解决这个问题呢？
 
+答案：有同学提到，可以使用Streams数据类型的消费组，同时消费生产者的数据，这是可以的。但是，有个地方需要注意，如果只是使用一个消费组的话，消费组内的多个消费者在消费消息时是互斥的，换句话说，在一个消费组内，一个消息只能被一个消费者消费。我们希望消息既要被消费者1读取，也要被消费者2读取，是一个多消费者的需求。所以，如果使用消费组模式，需要让消费者1和消费者2属于不同的消费组，这样它们就能同时消费了。
 
+另外，Redis基于字典和链表数据结构，实现了发布和订阅功能，这个功能可以实现一个消息被多个消费者消费使用，可以满足问题中的场景需求。
 
+## [第16讲](https://time.geekbang.org/column/article/285000)
 
+问题：Redis的写操作（例如SET、HSET、SADD等）是在关键路径上吗？
 
+答案：Redis本身是内存数据库，所以，写操作都需要在内存上完成执行后才能返回，这就意味着，如果这些写操作处理的是大数据集，例如1万个数据，那么，主线程需要等这1万个数据都写完，才能继续执行后面的命令。所以说，Redis的写操作也是在关键路径上的。
 
+这个问题是希望你把面向内存和面向磁盘的写操作区分开。当一个写操作需要把数据写到磁盘时，一般来说，写操作只要把数据写到操作系统的内核缓冲区就行。不过，如果我们执行了同步写操作，那就必须要等到数据写回磁盘。所以，面向磁盘的写操作一般不会在关键路径上。
 
+我看到有同学说，根据写操作命令的返回值来决定是否在关键路径上，如果返回值是OK，或者客户端不关心是否写成功，那么，此时的写操作就不算在关键路径上。
 
+这个思路不错，不过，需要注意的是，客户端经常会阻塞等待发送的命令返回结果，在上一个命令还没有返回结果前，客户端会一直等待，直到返回结果后，才会发送下一个命令。此时，即使我们不关心返回结果，客户端也要等到写操作执行完成才行。所以，在不关心写操作返回结果的场景下，可以对Redis客户端做异步改造。具体点说，就是使用异步线程发送这些不关心返回结果的命令，而不是在Redis客户端中等待这些命令的结果。
 
+## [第17讲](https://time.geekbang.org/column/article/286082)
 
+问题：在一台有两个CPU Socket（每个Socket 8个物理核）的服务器上，我们部署了一个有着8个实例的Redis切片集群（8个实例都为主节点，没有主备关系），现在有两个方案：
 
+1. 在同一个CPU Socket上运行8个实例，并和8个CPU核绑定；
+2. 在两个CPU Socket上各运行4个实例，并和相应Socket上的核绑定。
 
+如果不考虑网络数据读取的影响，你会选择哪个方案呢？
 
+答案：建议使用第二个方案，主要有两方面的原因。
 
+1. 同一个CPU Socket上的进程，会共享L3缓存。如果把8个实例都部署在同一个Socket上，它们会竞争L3缓存，这就会导致它们的L3缓存命中率降低，影响访问性能。
+2. 同一个CPU Socket上的进程，会使用同一个Socket上的内存空间。8个实例共享同一个Socket上的内存空间，肯定会竞争内存资源。如果有实例保存的数据量大，其他实例能用到的内存空间可能就不够了，此时，其他实例就会跨Socket申请内存，进而造成跨Socket访问内存，造成实例的性能降低。
 
+另外，在切片集群中，不同实例间通过网络进行消息通信和数据迁移，并不会使用共享内存空间进行跨实例的数据访问。所以，即使把不同的实例部署到不同的Socket上，它们之间也不会发生跨Socket内存的访问，不会受跨Socket内存访问的负面影响。
 
+## [第18讲](https://time.geekbang.org/column/article/286549)
 
+问题：在Redis中，还有哪些命令可以代替KEYS命令，实现对键值对的key的模糊查询呢？这些命令的复杂度会导致Redis变慢吗？
 
+答案：Redis提供的SCAN命令，以及针对集合类型数据提供的SSCAN、HSCAN等，可以根据执行时设定的数量参数，返回指定数量的数据，这就可以避免像KEYS命令一样同时返回所有匹配的数据，不会导致Redis变慢。以HSCAN为例，我们可以执行下面的命令，从user这个Hash集合中返回key前缀以103开头的100个键值对。
 
+```
+HSCAN user 0  match "103*" 100
+```
 
+## ==[第19讲]==
 
+问题：你遇到过Redis变慢的情况吗？如果有的话，你是怎么解决的呢？
 
+答案：@Kaito同学在留言区分享了他排查Redis变慢问题的Checklist，而且还提供了解决方案，非常好，我把Kaito同学给出的导致Redis变慢的原因汇总并完善一下，分享给你：
 
+1. 使用复杂度过高的命令或一次查询全量数据；
+2. 操作bigkey；
+3. 大量key集中过期；
+4. 内存达到maxmemory；
+5. 客户端使用短连接和Redis相连；
+6. 当Redis实例的数据量大时，无论是生成RDB，还是AOF重写，都会导致fork耗时严重；
+7. AOF的写回策略为always，导致每个操作都要同步刷回磁盘；
+8. Redis实例运行机器的内存不足，导致swap发生，Redis需要到swap分区读取数据；
+9. 进程绑定CPU不合理；
+10. Redis实例运行机器上开启了透明内存大页机制；
+11. 网卡压力过大。
 
+## [第20讲](https://time.geekbang.org/column/article/289140)
 
+问题：我们可以使用mem_fragmentation_ratio来判断Redis当前的内存碎片率是否严重，我给出的经验阈值都是大于1的。我想请你思考一下，如果mem_fragmentation_ratio小于1，Redis的内存使用是什么情况呢？会对Redis的性能和内存空间利用率造成什么影响呢？
 
+答案：如果mem_fragmentation_ratio小于1，就表明，操作系统分配给Redis的内存空间已经小于Redis所申请的空间大小了，此时，运行Redis实例的服务器上的内存已经不够用了，可能已经发生swap了。这样一来，Redis的读写性能也会受到影响，因为Redis实例需要在磁盘上的swap分区中读写数据，速度较慢。
 
+## [第21讲](https://time.geekbang.org/column/article/291277)
 
+问题：在和Redis实例交互时，应用程序中使用的客户端需要使用缓冲区吗？如果使用的话，对Redis的性能和内存使用会有影响吗？
 
+答案：应用程序中使用的Redis客户端，需要把要发送的请求暂存在缓冲区。这有两方面的好处。
 
+一方面，可以在客户端控制发送速率，避免把过多的请求一下子全部发到Redis实例，导致实例因压力过大而性能下降。不过，客户端缓冲区不会太大，所以，对Redis实例的内存使用没有什么影响。
 
+另一方面，在应用Redis主从集群时，主从节点进行故障切换是需要一定时间的，此时，主节点无法服务外来请求。如果客户端有缓冲区暂存请求，那么，客户端仍然可以正常接收业务应用的请求，这就可以避免直接给应用返回无法服务的错误。
 
+## ==代表性问题==
 
+在前面的课程中，我重点介绍了避免Redis变慢的方法。慢查询命令的执行时间和bigkey操作的耗时都很长，会阻塞Redis。很多同学学完之后，知道了要尽量避免Redis阻塞，但是还不太清楚，具体应该如何排查阻塞的命令和bigkey呢。
 
+所以，接下来，我就再重点解释一下，如何排查慢查询命令，以及如何排查bigkey。
 
+**问题1：如何使用慢查询日志和latency monitor排查执行慢的操作？**
 
+在第18讲中，我提到，可以使用Redis日志（慢查询日志）和latency monitor来排查执行较慢的命令操作，那么，我们该如何使用慢查询日志和latency monitor呢？
 
+Redis的慢查询日志记录了执行时间超过一定阈值的命令操作。当我们发现Redis响应变慢、请求延迟增加时，就可以在慢查询日志中进行查找，确定究竟是哪些命令执行时间很长。
 
+在使用慢查询日志前，我们需要设置两个参数。
 
+- **slowlog-log-slower-than**：这个参数表示，慢查询日志对执行时间大于多少微秒的命令进行记录。
+- **slowlog-max-len**：这个参数表示，慢查询日志最多能记录多少条命令记录。慢查询日志的底层实现是一个具有预定大小的先进先出队列，一旦记录的命令数量超过了队列长度，最先记录的命令操作就会被删除。这个值默认是128。但是，如果慢查询命令较多的话，日志里就存不下了；如果这个值太大了，又会占用一定的内存空间。所以，一般建议设置为1000左右，这样既可以多记录些慢查询命令，方便排查，也可以避免内存开销。
 
+设置好参数后，慢查询日志就会把执行时间超过slowlog-log-slower-than阈值的命令操作记录在日志中。
 
+我们可以使用SLOWLOG GET命令，来查看慢查询日志中记录的命令操作，例如，我们执行如下命令，可以查看最近的一条慢查询的日志信息。
 
+```
+SLOWLOG GET 1
+1) 1) (integer) 33           //每条日志的唯一ID编号
+   2) (integer) 1600990583   //命令执行时的时间戳
+   3) (integer) 20906        //命令执行的时长，单位是微秒
+   4) 1) "keys"               //具体的执行命令和参数
+      2) "abc*"
+   5) "127.0.0.1:54793"      //客户端的IP和端口号
+   6) ""                     //客户端的名称，此处为空
+```
 
+可以看到，KEYS "abc*"这条命令的执行时间是20906微秒，大约20毫秒，的确是一条执行较慢的命令操作。如果我们想查看更多的慢日志，只要把SLOWLOG GET后面的数字参数改为想查看的日志条数，就可以了。
 
+好了，有了慢查询日志后，我们就可以快速确认，究竟是哪些命令的执行时间比较长，然后可以反馈给业务部门，让业务开发人员避免在应用Redis的过程中使用这些命令，或是减少操作的数据量，从而降低命令的执行复杂度。
 
+除了慢查询日志以外，Redis从2.8.13版本开始，还提供了latency monitor监控工具，这个工具可以用来监控Redis运行过程中的峰值延迟情况。
 
+和慢查询日志的设置相类似，要使用latency monitor，首先要设置命令执行时长的阈值。当一个命令的实际执行时长超过该阈值时，就会被latency monitor监控到。比如，我们可以把latency monitor监控的命令执行时长阈值设为1000微秒，如下所示：
 
+```
+config set latency-monitor-threshold 1000
+```
 
+设置好了latency monitor的参数后，我们可以使用latency latest命令，查看最新和最大的超过阈值的延迟情况，如下所示：
 
+```
+latency latest
+1) 1) "command"
+   2) (integer) 1600991500    //命令执行的时间戳
+   3) (integer) 2500           //最近的超过阈值的延迟
+   4) (integer) 10100          //最大的超过阈值的延迟
+```
 
+==**问题2：如何排查Redis的bigkey？**==
 
+在应用Redis时，我们要尽量避免bigkey的使用，这是因为，Redis主线程在操作bigkey时，会被阻塞。那么，一旦业务应用中使用了bigkey，我们该如何进行排查呢？
 
+Redis可以在执行redis-cli命令时带上–bigkeys选项，进而对整个数据库中的键值对大小情况进行统计分析，比如说，统计每种数据类型的键值对个数以及平均大小。此外，这个命令执行后，会输出每种数据类型中最大的bigkey的信息，对于String类型来说，会输出最大bigkey的字节长度，对于集合类型来说，会输出最大bigkey的元素个数，如下所示：
 
+```
+./redis-cli  --bigkeys
 
+-------- summary -------
+Sampled 32 keys in the keyspace!
+Total key length in bytes is 184 (avg len 5.75)
+
+//统计每种数据类型中元素个数最多的bigkey
+Biggest   list found 'product1' has 8 items
+Biggest   hash found 'dtemp' has 5 fields
+Biggest string found 'page2' has 28 bytes
+Biggest stream found 'mqstream' has 4 entries
+Biggest    set found 'userid' has 5 members
+Biggest   zset found 'device:temperature' has 6 members
+
+//统计每种数据类型的总键值个数，占所有键值个数的比例，以及平均大小
+4 lists with 15 items (12.50% of keys, avg size 3.75)
+5 hashs with 14 fields (15.62% of keys, avg size 2.80)
+10 strings with 68 bytes (31.25% of keys, avg size 6.80)
+1 streams with 4 entries (03.12% of keys, avg size 4.00)
+7 sets with 19 members (21.88% of keys, avg size 2.71)
+5 zsets with 17 members (15.62% of keys, avg size 3.40)
+```
+
+不过，在使用–bigkeys选项时，有一个地方需要注意一下。这个工具是通过扫描数据库来查找bigkey的，所以，在执行的过程中，会对Redis实例的性能产生影响。如果你在使用主从集群，我建议你在从节点上执行该命令。因为主节点上执行时，会阻塞主节点。如果没有从节点，那么，我给你两个小建议：第一个建议是，在Redis实例业务压力的低峰阶段进行扫描查询，以免影响到实例的正常运行；第二个建议是，可以使用-i参数控制扫描间隔，避免长时间扫描降低Redis实例的性能。例如，我们执行如下命令时，redis-cli会每扫描100次暂停100毫秒（0.1秒）。
+
+```
+./redis-cli  --bigkeys -i 0.1
+```
+
+当然，使用Redis自带的–bigkeys选项排查bigkey，有两个不足的地方：
+
+1. 这个方法只能返回每种类型中最大的那个bigkey，无法得到大小排在前N位的bigkey；
+2. 对于集合类型来说，这个方法只统计集合元素个数的多少，而不是实际占用的内存量。但是，一个集合中的元素个数多，并不一定占用的内存就多。因为，有可能每个元素占用的内存很小，这样的话，即使元素个数有很多，总内存开销也不大。
+
+所以，如果我们想统计每个数据类型中占用内存最多的前N个bigkey，可以自己开发一个程序，来进行统计。
+
+我给你提供一个基本的开发思路：使用SCAN命令对数据库扫描，然后用TYPE命令获取返回的每一个key的类型。接下来，对于String类型，可以直接使用STRLEN命令获取字符串的长度，也就是占用的内存空间字节数。
+
+对于集合类型来说，有两种方法可以获得它占用的内存大小。
+
+如果你能够预先从业务层知道集合元素的平均大小，那么，可以使用下面的命令获取集合元素的个数，然后乘以集合元素的平均大小，这样就能获得集合占用的内存大小了。
+
+- List类型：LLEN命令；
+- Hash类型：HLEN命令；
+- Set类型：SCARD命令；
+- Sorted Set类型：ZCARD命令；
+
+如果你不能提前知道写入集合的元素大小，可以使用MEMORY USAGE命令（需要Redis 4.0及以上版本），查询一个键值对占用的内存空间。例如，执行以下命令，可以获得key为user:info这个集合类型占用的内存空间大小。
+
+```
+MEMORY USAGE user:info
+(integer) 315663239
+```
+
+这样一来，你就可以在开发的程序中，把每一种数据类型中的占用内存空间大小排在前 N 位的key统计出来，这也就是每个数据类型中的前N个bigkey。
 
 
 
@@ -6048,7 +5974,7 @@ tcpdump host 192.168.10.3 port 16379 -i 网卡名 -w /tmp/r1.cap
 
 我把这两类缓存的优劣势汇总在一张表中，如下所示：
 
-<img src="images/84ed48ebccd3443f29cba150b5c1a951.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/84ed48ebccd3443f29cba150b5c1a951.jpg" alt="img" style="zoom:25%;" />
 
 ## [第24讲](https://time.geekbang.org/column/article/294640)
 
@@ -6284,7 +6210,7 @@ Memcached和RocksDB分别是典型的内存键值数据库和硬盘键值数据�
 
 我把Redis和Memcached的对比情况总结在了一张表里，你可以看下。
 
-<img src="images/9eb06cfea8a3ec6fced6e736e4e9ec29.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/9eb06cfea8a3ec6fced6e736e4e9ec29.jpg" alt="img" style="zoom:25%;" />
 
 #### Redis和RocksDB的比较
 
@@ -6298,7 +6224,7 @@ Memcached和RocksDB分别是典型的内存键值数据库和硬盘键值数据�
 
 我把Redis和RocksDB的对比情况总结了下，如下表所示：
 
-<img src="images/7c0a225636f4983cb56a5b7265cf5982.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/7c0a225636f4983cb56a5b7265cf5982.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -6366,7 +6292,7 @@ Memcached和RocksDB分别是典型的内存键值数据库和硬盘键值数据�
 
 我用一张图片，展示一下Redis的关键机制和操作系统、分布式系统的对应知识点。
 
-<img src="images/a0f558fbf9105817744ee2c44230c62c.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/a0f558fbf9105817744ee2c44230c62c.jpg" alt="img" style="zoom:25%;" />
 
 AOF日志的刷盘时机和操作系统的fsync机制、高速页缓存的刷回有关，而网络框架跟epoll有关，RDB生成和AOF重写与fork、写时复制有关（我在前面第3、4、5讲上讲过它们的关联）。
 

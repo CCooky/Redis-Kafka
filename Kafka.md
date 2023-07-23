@@ -6,7 +6,7 @@
 
 下面是我特意为专栏画的一张思维导图，可以帮你迅速了解这个专栏的知识结构体系是什么样的。专栏大致从六个方面展开，包括Kafka入门、Kafka的基本使用、客户端详解、Kafka原理介绍、Kafka运维与监控以及高级Kafka应用。
 
-<img src="images/8b28137150c70d66200f649e26ff2395.jpg" alt="img" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/8b28137150c70d66200f649e26ff2395.jpg" alt="img" style="zoom: 67%;" />
 
 - 专栏的第一部分我会介绍消息引擎这类系统大致的原理和用途，以及作为优秀消息引擎代表的Kafka在这方面的表现。
 - 第二部分则重点探讨Kafka如何用于生产环境，特别是线上环境方案的制定。
@@ -51,7 +51,7 @@
 - **点对点模型**：也叫消息队列模型。如果拿上面那个“民间版”的定义来说，那么系统A发送的消息只能被系统B接收，其他任何系统都不能读取A发送的消息。日常生活的例子比如电话客服就属于这种模型：同一个客户呼入电话只能被一位客服人员处理，第二个客服人员不能为该客户服务。
 - **发布/订阅模型**：与上面不同的是，它有一个主题（Topic）的概念，你可以理解成逻辑语义相近的消息容器。该模型也有发送方和接收方，只不过提法不同。发送方也称为发布者（Publisher），接收方称为订阅者（Subscriber）。和点对点模型不同的是，这个模型可能存在多个发布者向相同的主题发送消息，而订阅者也可能存在多个，它们都能接收到相同主题的消息。生活中的报纸订阅就是一种典型的发布/订阅模型。
 
-<img src="images/8bc58bf5bb98db09fd6ef343e0f28826.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/8bc58bf5bb98db09fd6ef343e0f28826.jpg" alt="img" style="zoom: 25%;" />
 
 
 
@@ -149,7 +149,7 @@
 
 最后我用一张图来展示上面提到的这些概念，希望这张图能够帮助你形象化地理解所有这些概念：
 
-<img src="images/06dbe05a9ed4e5bcc191bbdb985352df.png" alt="img" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/06dbe05a9ed4e5bcc191bbdb985352df.png" alt="img" style="zoom: 67%;" />
 
 **为什么 Kafka 不像 MySQL 那样允许追随者副本对外提供读服务？** 
 
@@ -171,7 +171,7 @@
 
 在专栏上一期中，我们谈了Kafka当前的定位问题，Kafka不再是一个单纯的消息引擎系统，而是能够实现精确一次（Exactly-once）处理语义的实时流处理平台。
 
-<img src="images/a2ec80dceb9ba6eeaaeebc662f439211.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/a2ec80dceb9ba6eeaaeebc662f439211.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -185,7 +185,7 @@
 
 当前Apache Kafka已经迭代到2.2版本，社区正在为2.3.0发版日期进行投票，相信2.3.0也会马上发布。但是稍微有些令人吃惊的是，很多人对于Kafka的版本命名理解存在歧义。比如我们在官网上下载Kafka时，会看到这样的版本：
 
-<img src="images/c10df9e6f72126e9c721fba38e27ac23.png" alt="img" style="zoom: 50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c10df9e6f72126e9c721fba38e27ac23.png" alt="img" style="zoom: 50%;" />
 
 于是有些同学就会纳闷，难道Kafka版本号不是2.11或2.12吗？其实不然，**前面的版本号是编译Kafka源代码的Scala编译器版本。**
 
@@ -203,7 +203,7 @@ Kafka目前总共演进了7个大版本，分别是0.7、0.8、0.9、0.10、0.11
 
 最后我合并说下1.0和2.0版本吧，因为在我看来这两个大版本主要还是Kafka Streams的各种改进，在消息引擎方面并未引入太多的重大功能特性。Kafka Streams的确在这两个版本有着非常大的变化，也必须承认Kafka Streams目前依然还在积极地发展着。如果你是Kafka Streams的用户，至少选择2.0.0版本吧。
 
-<img src="images/9be3f8c5c2930f6482fb43d8bca507d1.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/9be3f8c5c2930f6482fb43d8bca507d1.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -219,7 +219,7 @@ Kafka目前总共演进了7个大版本，分别是0.7、0.8、0.9、0.10、0.11
 
 所谓“兵马未动，粮草先行”。与其盲目上马一套Kafka环境然后事后费力调整，不如在一开始就思考好实际场景下业务所需的集群环境。在考量部署方案时需要通盘考虑，不能仅从单个维度上进行评估。相信今天我们聊完之后，你对如何规划Kafka生产环境一定有了一个清晰的认识。现在我来总结一下今天的重点：
 
-<img src="images/d2a926bc8f448f58bda0d21b7ed39f55.jpeg" alt="img" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/d2a926bc8f448f58bda0d21b7ed39f55.jpeg" alt="img" style="zoom:50%;" />
 
 
 
@@ -249,13 +249,13 @@ Kafka目前总共演进了7个大版本，分别是0.7、0.8、0.9、0.10、0.11
 
 - 它是一个分布式协调框架，负责协调管理并保存Kafka集群的所有元数据信息，比如集群都有哪些Broker在运行、创建了哪些Topic，每个Topic都有多少分区以及这些分区的Leader副本都在哪些机器上等信息。
 
-<img src="images/d5248ba158a2283c095324a265d9f7e7.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/d5248ba158a2283c095324a265d9f7e7.jpg" alt="img" style="zoom:25%;" />
 
 ## 2.3 集群参数配置（下）
 
 下半部分主要是Topic级别参数、JVM参数以及操作系统参数的设置。
 
-<img src="images/da521c645594bcf0e4670a3d20937b87.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/da521c645594bcf0e4670a3d20937b87.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -279,7 +279,7 @@ Kafka目前总共演进了7个大版本，分别是0.7、0.8、0.9、0.10、0.11
 
 主题下的每条消息只会保存在某一个分区中，而不会在多个分区中被保存多份。官网上的这张图非常清晰地展 示了Kafka的三级结构，如下所示：
 
-<img src="images/18e487b7e64eeb8d0a487c289d83ab63.png" alt="img" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/18e487b7e64eeb8d0a487c289d83ab63.png" alt="img" style="zoom: 67%;" />
 
 现在我抛出一个问题：为什么Kafka要做这样的设计？为什么使用分区的概念而不是直接使用多个主题呢？
 
@@ -310,7 +310,7 @@ Kafka目前总共演进了7个大版本，分别是0.7、0.8、0.9、0.10、0.11
 
 也称Round-robin策略，即顺序分配。比如一个主题下有3个分区，那么第一条消息被发送到分区0，第二条被发送到分区1，第三条被发送到分区2，以此类推。当生产第4条消息时又会重新开始，即将其分配到分区0，就像下面这张图展示的那样。
 
-<img src="images/6c630aaf0b365115897231a4e0a7e1af.png" alt="img" style="zoom: 33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/6c630aaf0b365115897231a4e0a7e1af.png" alt="img" style="zoom: 33%;" />
 
 轮询策略有非常优秀的负载均衡表现，它总是能保证消息最大限度地被平均分配到所有分区上，故默认情况下它是最合理的分区策略，也是我们最常用的分区策略之一。
 
@@ -318,7 +318,7 @@ Kafka目前总共演进了7个大版本，分别是0.7、0.8、0.9、0.10、0.11
 
 也称Randomness策略。所谓随机就是我们随意地将消息放置到任意一个分区上，如下面这张图所示。
 
-<img src="images/5b50b76efb8ada0f0779ac3275d215a3.png" alt="img" style="zoom: 33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/5b50b76efb8ada0f0779ac3275d215a3.png" alt="img" style="zoom: 33%;" />
 
 机策略是老版本生产者使用的分区策略，在新版本中已经改为轮询了。
 
@@ -362,7 +362,7 @@ Producer程序丢失消息，这应该算是被抱怨最多的数据丢失场景
 
 Consumer端丢失数据主要体现在Consumer端要消费的消息不见了。Consumer程序有个“位移”的概念，表示的是这个Consumer当前消费到的Topic分区的位置。下面这张图来自于官网，它清晰地展示了Consumer端的位移数据。比如对于Consumer A而言，它当前的位移值就是9；Consumer B的位移值是11。
 
-<img src="images/0c97bed3b6350d73a9403d9448290d37.png" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/0c97bed3b6350d73a9403d9448290d37.png" alt="img" style="zoom: 25%;" />
 
 办法很简单：**维持先消费消息，再更新位移的顺序**即可。这样就能最大限度地保证消息不丢失。
 
@@ -380,11 +380,11 @@ Consumer端丢失数据主要体现在Consumer端要消费的消息不见了。C
 
 1. **使用同步发送producer.send(msg)，不要使用异步发送producer.send(msg, callback)。**
 
-   <img src="images/image-20230721144930964.png" alt="image-20230721144930964" style="zoom:50%;" />
+   <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20230721144930964.png" alt="image-20230721144930964" style="zoom:50%;" />
 
-   <img src="images/image-20230721150841048.png" alt="image-20230721150841048" style="zoom:80%;" />
+   <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20230721150841048.png" alt="image-20230721150841048" style="zoom:80%;" />
 
-   <img src="images/image-20230721145708371.png" alt="image-20230721145708371" style="zoom: 50%;" />
+   <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20230721145708371.png" alt="image-20230721145708371" style="zoom: 50%;" />
 
    ​			异步发送，生产者发送完消息后就可以执行后续业务，不会有任何阻塞，Broker端在收到消息写入后会异步调用生产者提供的callback回调方法。吞吐量很大但是会丢消息。
 
@@ -410,7 +410,7 @@ Consumer端丢失数据主要体现在Consumer端要消费的消息不见了。C
 
    
 
-   <img src="images/3fc09aa33dc1022e867df4930054ce5a.jpg" alt="img" style="zoom:25%;" />
+   <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/3fc09aa33dc1022e867df4930054ce5a.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -422,7 +422,7 @@ Consumer端丢失数据主要体现在Consumer端要消费的消息不见了。C
 
 如果你用过Spring Interceptor或是Apache Flume，那么应该不会对拦截器这个概念感到陌生，其基本思想就是允许应用程序在不修改逻辑的情况下，动态地实现一组可插拔的事件处理逻辑链。它能够在主业务操作的前后多个时间点上插入对应的“拦截”逻辑。下面这张图展示了Spring MVC拦截器的工作原理：
 
-<img src="images/096831a3ba037b3f9e507e6db631d3c4.png" alt="img" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/096831a3ba037b3f9e507e6db631d3c4.png" alt="img" style="zoom:67%;" />
 
 拦截器1和拦截器2分别在请求发送之前、发送之后以及完成之后三个地方插入了对应的处理逻辑。而Flume中的拦截器也是同理，它们插入的逻辑可以是修改待发送的消息，也可以是创建新的消息，甚至是丢弃消息。这些功能都是以配置拦截器类的方式动态插入到应用程序中的，故可以快速地切换不同的拦截器而不影响主程序逻辑。
 
@@ -563,7 +563,7 @@ public class AvgLatencyConsumerInterceptor implements ConsumerInterceptor {
 
 从这一期开始，我们将逐渐接触到更多的实际代码。看完了今天的分享，我希望你能够亲自动手编写一些代码，去实现一个拦截器，体会一下Kafka拦截器的功能。要知道，“纸上得来终觉浅，绝知此事要躬行”。也许你在敲代码的同时，就会想到一个使用拦截器的绝妙点子，让我们拭目以待吧。
 
-<img src="images/f2cbe18428396aab14749be10dc5550d.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f2cbe18428396aab14749be10dc5550d.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -726,7 +726,7 @@ try {
 
 不过，切记天下没有免费的午餐。比起幂等性Producer，事务型Producer的性能要更差，在实际使用过程中，我们需要仔细评估引入事务的开销，切不可无脑地启用事务。
 
-<img src="images/419a092ef55d0fa248a56fe582a551ed.jpg" alt="img" style="zoom:24%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/419a092ef55d0fa248a56fe582a551ed.jpg" alt="img" style="zoom:24%;" />
 
 ## 3.5 消费者组到底是什么？
 
@@ -797,7 +797,7 @@ Rebalance的触发条件有3个。
 
 总结一下，今天我跟你分享了Kafka Consumer Group的方方面面，包括它是怎么定义的，它解决了哪些问题，有哪些特性。同时，我们也聊到了Consumer Group的位移管理以及著名的Rebalance过程。希望在你开发Consumer应用时，它们能够助你一臂之力。
 
-<img src="images/60478ddbf101b19a747d8110ae019ef5.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/60478ddbf101b19a747d8110ae019ef5.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -833,7 +833,7 @@ Consumer的位移管理机制其实也很简单，就是将消费组的位移数
 
 **Kafka提供了专门的后台线程定期地巡检待Compact的主题，看看是否存在满足条件的可删除数据**。这个后台线程叫Log Cleaner。很多实际生产环境中都出现过位移主题无限膨胀占用过多磁盘空间的问题，如果你的环境中也有这个问题，我建议你去检查一下Log Cleaner线程的状态，通常都是这个线程挂掉了导致的。
 
-<img src="images/927e436fb8054665d81db418c25af3b7.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/927e436fb8054665d81db418c25af3b7.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -909,7 +909,7 @@ Consumer实例增加的情况很好理解，当我们启动一个配置有相同
 
 
 
-<img src="images/321c73b51f5e5c3124765101edc53ed3.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/321c73b51f5e5c3124765101edc53ed3.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -1008,7 +1008,7 @@ Consumer实例增加的情况很好理解，当我们启动一个配置有相同
 - redis实现分布式锁：每条消息给一个分布式id，消费者只能一条条消费，每次消费之前先去获取该锁，锁的key就是消息的分布式ID，获取到了就消费，否则就不消费该消息；
 - 依靠外部数据库，将分布式id存到数据库，每次查一下该id是否已经存在了，如果存在就不消费跳过它；
 
-<img src="images/a6e24c364321aaa44b8fedf3836bccd1.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/a6e24c364321aaa44b8fedf3836bccd1.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -1166,7 +1166,7 @@ Broker处理完上一步发送的FindCoordinator请求之后，会返还对应�
 
 好了，今天我们补齐了Kafka Java客户端管理TCP连接的“拼图”。我们不仅详细描述了Java消费者是怎么创建和关闭TCP连接的，还对目前的设计方案提出了一些自己的思考。希望今后你能将这些知识应用到自己的业务场景中，并对实际生产环境中的Socket管理做到心中有数。
 
-<img src="images/f13d7008d7b251df0e6e6a89077d7604.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f13d7008d7b251df0e6e6a89077d7604.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -1190,7 +1190,7 @@ $ bin/kafka-consumer-groups.sh --bootstrap-server  --describe --group
 
 **Kafka连接信息就是<主机名：端口>对，而group名称就是你的消费者程序中设置的group.id值**。我举个实际的例子来说明具体的用法，请看下面这张图的输出：
 
-![img](images/18bc0ee629cfa761b1d17e638be9f67d.png)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/18bc0ee629cfa761b1d17e638be9f67d.png)
 
 在运行命令时，指定了Kafka集群的连接信息localhost:9092。设置了要查询的消费者组名：testgroup。
 
@@ -1236,13 +1236,13 @@ Lag值的含义我们已经反复讲过了，我就不再重复了。**这里的
 
 > 接下来，我给出一张使用JConsole工具监控此JMX指标的截图。从这张图片中，我们可以看到，client-id为consumer-1的消费者在给定的测量周期内最大的Lag值为714202，最小的Lead值是83，这说明此消费者有很大的消费滞后性。
 >
-> <img src="images/598a8e2c16efb23b1dc07376773c7252.png" alt="img" style="zoom: 50%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/598a8e2c16efb23b1dc07376773c7252.png" alt="img" style="zoom: 50%;" />
 >
 > **Kafka消费者还在分区级别提供了额外的JMX指标，用于单独监控分区级别的Lag和Lead值**。JMX名称为：kafka.consumer:type=consumer-fetch-manager-metrics,partition=“{partition}”,topic=“{topic}”,client-id=“{client-id}”。
 >
 > 在我们的例子中，client-id还是consumer-1，主题和分区分别是test和0。下图展示出了分区级别的JMX指标：
 >
-> <img src="images/850e91e0025c2443aebce21a29ac784a.png" alt="img" style="zoom:50%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/850e91e0025c2443aebce21a29ac784a.png" alt="img" style="zoom:50%;" />
 >
 > 分区级别的JMX指标中多了records-lag-avg和records-lead-avg两个属性，可以计算平均的Lag值和Lead值。在实际场景中，我们会更多地使用这两个JMX指标。
 >
@@ -1255,7 +1255,7 @@ Lag值的含义我们已经反复讲过了，我就不再重复了。**这里的
 
 在真实的线上环境中，我建议你优先考虑方法3，同时将方法1和方法2作为备选，装进你自己的工具箱中，随时取出来应对各种实际场景。
 
-<img src="images/c2a03833838589fa5839c7c27f3982e2.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c2a03833838589fa5839c7c27f3982e2.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -1285,7 +1285,7 @@ Lag值的含义我们已经反复讲过了，我就不再重复了。**这里的
 
 在实际生产环境中，每台Broker都可能保存有各个主题下不同分区的不同副本，因此，单个Broker上存有成百上千个副本的现象是非常正常的。
 
-<img src="images/b600557f4f11dcc644813f46cbbc03d3.png" alt="img" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/b600557f4f11dcc644813f46cbbc03d3.png" alt="img" style="zoom:67%;" />
 
 ### 4.1.2 副本工作方式
 
@@ -1293,7 +1293,7 @@ Lag值的含义我们已经反复讲过了，我就不再重复了。**这里的
 
 基于Leader的副本机制的工作原理如下图所示
 
-<img src="images/2fa6fef8d596f046b628a3befa8d6d9f.png" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/2fa6fef8d596f046b628a3befa8d6d9f.png" alt="img" style="zoom: 25%;" />
 
 - 第一，在Kafka中，副本分成两类：领导者副本（Leader Replica）和追随者副本（Follower Replica）。每个分区在创建时都要选举一个副本，称为领导者副本，其余的副本自动称为追随者副本。
 
@@ -1333,7 +1333,7 @@ Lag值的含义我们已经反复讲过了，我就不再重复了。**这里的
 
 **3、能够进入到ISR的追随者副本要满足一定的条件**
 
-<img src="images/df4824e3ae53e7aebd03c38d8859aae0.png" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/df4824e3ae53e7aebd03c38d8859aae0.png" alt="img" style="zoom: 25%;" />
 
 > 图中有3个副本：1个领导者副本和2个追随者副本。Leader副本当前写入了10条消息，Follower1副本同步了其中的6条消息，而Follower2副本只同步了其中的3条消息。现在，请你思考一下，对于这2个追随者副本，你觉得哪个追随者副本与Leader不同步？
 >
@@ -1376,7 +1376,7 @@ Lag值的含义我们已经反复讲过了，我就不再重复了。**这里的
 
 ### 小结
 
-<img src="images/d75c01661ca5367cfd23ad92cc10e372.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/d75c01661ca5367cfd23ad92cc10e372.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -1428,7 +1428,7 @@ Apache Kafka自己定义了一组请求协议，用于实现各种各样的交�
 
 Reactor模式的架构如下图所示：
 
-<img src="images/654b83dc6b24d89c138938c15d2e8352.png" alt="img" style="zoom: 33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/654b83dc6b24d89c138938c15d2e8352.png" alt="img" style="zoom: 33%;" />
 
 从这张图中，我们可以发现，多个客户端会发送请求给到Reactor。==Reactor有个请求分发线程Dispatcher==，图中的Acceptor，它会将不同的请求下发到多个工作线程中处理。
 
@@ -1436,7 +1436,7 @@ Reactor模式的架构如下图所示：
 
 ==如果我们来为Kafka画一张类似的图的话，那它应该是这个样子的：==
 
-<img src="images/e1ae8884999175dac0c6e21beb2f7e6e.png" alt="img" style="zoom: 33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/e1ae8884999175dac0c6e21beb2f7e6e.png" alt="img" style="zoom: 33%;" />
 
 **Kafka的Broker端有个SocketServer组件，**类似于Reactor模式中的Dispatcher，它也有对应的Acceptor线程和一个工作线程池，只不过在Kafka中，这个工作线程池有个专属的名字，叫网络线程池。
 
@@ -1450,7 +1450,7 @@ Acceptor线程采用轮询的方式将入站请求公平地发到所有网络线
 
 你可能会认为，它顺序处理不就好了吗？实际上，Kafka在这个环节又做了一层异步线程池的处理，我们一起来看一看下面这张图。
 
-<img src="images/d8a7d6f0bdf9dc3af4ff55ff79b42068.png" alt="img" style="zoom:33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/d8a7d6f0bdf9dc3af4ff55ff79b42068.png" alt="img" style="zoom:33%;" />
 
 **1、当网络线程拿到请求后，它不是自己处理，而是将请求放入到一个共享请求队列中。**
 
@@ -1506,11 +1506,11 @@ Kafka Java消费者需要定期地发送心跳请求（Heartbeat Request）到Br
 
 Kafka为消费者组定义了5种状态，它们分别是：Empty、Dead、PreparingRebalance、CompletingRebalance和Stable。
 
-<img src="images/3c281189cfb1d87173bc2d4b8149f38b.jpeg" alt="img" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/3c281189cfb1d87173bc2d4b8149f38b.jpeg" alt="img" style="zoom: 67%;" />
 
 了解了这些状态的含义之后，我们来看一张图片，它展示了状态机的各个状态流转。
 
-<img src="images/f16fbcb798a53c21c3bf1bcd5b72b006.png" alt="img" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f16fbcb798a53c21c3bf1bcd5b72b006.png" alt="img" style="zoom: 67%;" />
 
 我来解释一下消费者组启动时的状态流转过程。一个消费者组最开始是Empty状态，当重平衡过程开启后，它会被置于PreparingRebalance状态等待成员加入，之后变更到CompletingRebalance状态等待分配方案，最后流转到Stable状态完成重平衡。
 
@@ -1554,11 +1554,11 @@ Kafka为消费者组定义了5种状态，它们分别是：Empty、Dead、Prepa
 
 接下来，我用一张图来形象地说明一下JoinGroup请求的处理过程。
 
-<img src="images/e7d40ce1c34d66ec36bfdaaa3ec9611f.png" alt="img" style="zoom: 33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/e7d40ce1c34d66ec36bfdaaa3ec9611f.png" alt="img" style="zoom: 33%;" />
 
 下面这张图描述的是SyncGroup请求的处理流程。
 
-<img src="images/6252b051450c32c143f03410f6c2b75d.png" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/6252b051450c32c143f03410f6c2b75d.png" alt="img" style="zoom:25%;" />
 
 SyncGroup请求的主要目的，就是让协调者把领导者制定的分配方案下发给各个组内成员。当所有成员都成功接收到分配方案后，消费者组进入到Stable状态，即开始正常的消费工作。
 
@@ -1574,31 +1574,31 @@ SyncGroup请求的主要目的，就是让协调者把领导者制定的分配�
 
 当协调者收到新的JoinGroup请求后，它会通过心跳请求响应的方式通知组内现有的所有成员，强制它们开启新一轮的重平衡。具体的过程和之前的客户端重平衡流程是一样的。现在，我用一张时序图来说明协调者一端是如何处理新成员入组的。
 
-<img src="images/62f85fb0b0f06989dd5a6f133599ca33.png" alt="img" style="zoom: 50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/62f85fb0b0f06989dd5a6f133599ca33.png" alt="img" style="zoom: 50%;" />
 
 **场景二：组成员主动离组。**
 
 何谓主动离组？就是指消费者实例所在线程或进程调用close()方法主动通知协调者它要退出。这个场景就涉及到了第三类请求：**LeaveGroup请求**。协调者收到LeaveGroup请求后，依然会以心跳响应的方式通知其他成员，因此我就不再赘述了，还是直接用一张图来说明。
 
-<img src="images/867245cbf6cfd26573aba1816516b26b.png" alt="img" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/867245cbf6cfd26573aba1816516b26b.png" alt="img" style="zoom:50%;" />
 
 **场景三：组成员崩溃离组。**
 
 **崩溃离组是指消费者实例出现严重故障，突然宕机导致的离组**。它和主动离组是有区别的，因为后者是主动发起的离组，协调者能马上感知并处理。但崩溃离组是被动的，协调者通常需要等待一段时间才能感知到，这段时间一般是由消费者端参数session.timeout.ms控制的。
 
-<img src="images/bc00d35060e1a4216e177e5b361ad40c.png" alt="img" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/bc00d35060e1a4216e177e5b361ad40c.png" alt="img" style="zoom:50%;" />
 
 **场景四：重平衡时，协调者对组内成员提交位移的处理。**
 
 正常情况下，每个组内成员都会定期汇报位移给协调者。当重平衡开启时，协调者会给予成员一段缓冲时间，要求每个成员必须在这段时间内快速地上报自己的位移信息，然后再开启正常的JoinGroup/SyncGroup请求发送。还是老办法，我们使用一张图来说明。
 
-<img src="images/83b77094d4170b9057cedfed9cdb33be.png" alt="img" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/83b77094d4170b9057cedfed9cdb33be.png" alt="img" style="zoom:50%;" />
 
 ### 小结
 
 
 
-<img src="images/6f0aaf535180899b16923dc3c76ad373.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/6f0aaf535180899b16923dc3c76ad373.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -1622,7 +1622,7 @@ SyncGroup请求的主要目的，就是让协调者把领导者制定的分配�
 >
 > 依托于这些功能，ZooKeeper常被用来实现**集群成员管理、分布式锁、领导者选举**等功能。Kafka控制器大量使用Watch功能实现对集群的协调管理。我们一起来看一张图片，它展示的是Kafka在ZooKeeper中创建的znode分布。你不用了解每个znode的作用，但你可以大致体会下Kafka对ZooKeeper的依赖。
 >
-> <img src="images/81caaddbf27cb7f938fb41dc3737c1f3.jpg" alt="img" style="zoom:25%;" />
+> <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/81caaddbf27cb7f938fb41dc3737c1f3.jpg" alt="img" style="zoom:25%;" />
 >
 > 掌握了ZooKeeper的这些基本知识，现在我们就可以开启对Kafka控制器的讨论了。
 
@@ -1673,7 +1673,7 @@ Preferred领导者选举主要是Kafka为了避免部分Broker负载过重而提
 
 接下来，我们就详细看看，控制器中到底保存了哪些数据。
 
-<img src="images/38ff78fdeb2a86943ae60f15c3ad28c8.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/38ff78fdeb2a86943ae60f15c3ad28c8.jpg" alt="img" style="zoom: 25%;" />
 
 怎么样，图中展示的数据量是不是很多？几乎把我们能想到的所有Kafka集群的数据都囊括进来了。这里面比较重要的数据有：
 
@@ -1693,7 +1693,7 @@ Preferred领导者选举主要是Kafka为了避免部分Broker负载过重而提
 
 接下来，我们一起来看一张图，它简单地展示了控制器故障转移的过程。
 
-<img src="images/128903a88ea1c9dd27f6a62e496b44ed.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/128903a88ea1c9dd27f6a62e496b44ed.jpg" alt="img" style="zoom: 25%;" />
 
 最开始时，Broker 0是控制器。当Broker 0宕机后，ZooKeeper通过Watch机制感知到并删除了/controller临时节点。之后，所有存活的Broker开始竞选新的控制器身份。Broker 3最终赢得了选举，成功地在ZooKeeper上重建了/controller节点。之后，Broker 3会从ZooKeeper中读取集群元数据信息，并初始化到自己的缓存中。至此，控制器的Failover完成，可以行使正常的工作职责了。
 
@@ -1703,7 +1703,7 @@ Preferred领导者选举主要是Kafka为了避免部分Broker负载过重而提
 
 好了，有关Kafka控制器的内容，我已经讲完了。最后，我再跟你分享一个小窍门。当你觉得控制器组件出现问题时，比如主题无法删除了，或者重分区hang住了，你不用重启Kafka Broker或控制器。有一个简单快速的方式是，去ZooKeeper中手动删除/controller节点。**具体命令是rmr /controller**。这样做的好处是，既可以引发控制器的重选举，又可以避免重启Broker导致的消息处理中断。
 
-<img src="images/a77479402c0fddbf7541d26d72a97707.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/a77479402c0fddbf7541d26d72a97707.jpg" alt="img" style="zoom:25%;" />
 
 ==目前，控制器依然是重度依赖于ZooKeeper的。未来如果要减少对ZooKeeper的依赖，你觉得可能的方向是什么？==
 
@@ -1727,7 +1727,7 @@ Preferred领导者选举主要是Kafka为了避免部分Broker负载过重而提
 
 为了帮助你更好地理解水位，我借助这本书里的一张图来说明一下。
 
-<img src="images/fb2c9e883b78c5d10b09b4a9773b8c13.png" alt="img" style="zoom: 33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/fb2c9e883b78c5d10b09b4a9773b8c13.png" alt="img" style="zoom: 33%;" />
 
 图中标注“Completed”的蓝色部分代表已完成的工作，标注“In-Flight”的红色部分代表正在进行中的工作，两者的边界就是水位线。
 
@@ -1742,7 +1742,7 @@ Preferred领导者选举主要是Kafka为了避免部分Broker负载过重而提
 
 下面这张图展示了多个与高水位相关的Kafka术语。 
 
-<img src="images/c2243d5887f0ca7a20a524914b85a8dd.png" alt="img" style="zoom:33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c2243d5887f0ca7a20a524914b85a8dd.png" alt="img" style="zoom:33%;" />
 
 我们假设这是某个分区Leader副本的高水位图。首先，请你注意图中的“已提交消息”和“未提交消息”。我们之前在谈到Kafka持久性保障的时候，特意对两者进行了区分。现在，我借用高水位再次强调一下。
 
@@ -1764,7 +1764,7 @@ Preferred领导者选举主要是Kafka为了避免部分Broker负载过重而提
 
 在这张图中，我们可以看到，Broker 0上保存了某分区的Leader副本和所有Follower副本的LEO值，而Broker 1上仅仅保存了该分区的某个Follower副本。
 
-<img src="images/be0c738f34e3cd1d95d509f16cbb7f82.png" alt="img" style="zoom: 33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/be0c738f34e3cd1d95d509f16cbb7f82.png" alt="img" style="zoom: 33%;" />
 
 ==Kafka把Leader副本Broker保存的Follower副本称为远程副本（Remote Replica）==
 
@@ -1778,7 +1778,7 @@ Preferred领导者选举主要是Kafka为了避免部分Broker负载过重而提
 
 为了帮助你更好地记忆这些值被更新的时机，我做了一张表格。只有搞清楚了更新机制，我们才能开始讨论Kafka副本机制的原理，以及它是如何使用高水位来执行副本消息同步的。
 
-<img src="images/c81e888761b5f04822216845be981649.jpeg" alt="img" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/c81e888761b5f04822216845be981649.jpeg" alt="img" style="zoom: 67%;" />
 
 ==什么叫与Leader副本保持同步==。
 
@@ -1831,17 +1831,17 @@ Preferred领导者选举主要是Kafka为了避免部分Broker负载过重而提
 
 **1、首先是初始状态。**下面这张图中的remote LEO就是远程副本的LEO值。在初始状态时，所有值都是0。
 
-![img](images/2ecec2915d1a52f136517d15192a4c72.png)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/2ecec2915d1a52f136517d15192a4c72.png)
 
 **2、当生产者给主题分区发送一条消息后，状态变更为：**
 
-![img](images/42841bfd3d5d4fa8560e176cb9d20b5b.png)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/42841bfd3d5d4fa8560e176cb9d20b5b.png)
 
 此时，Leader副本成功将消息写入了本地磁盘，故LEO值被更新为1。
 
 Follower再次尝试从Leader拉取消息，这次有消息可以拉取了，因此状态进一步变更为：
 
-![img](images/f65911a5c247ad83826788fd275e1ade.png)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f65911a5c247ad83826788fd275e1ade.png)
 
 这时，Follower副本也成功地更新LEO为1，所以Leader和Follower副本的LEO都是1；
 
@@ -1849,7 +1849,7 @@ Follower再次尝试从Leader拉取消息，这次有消息可以拉取了，因
 
 ==并且，Leader副本的高水位会先更新，然后在Leader给follwer发送返回值后，follower才会更新，两者时间存在不同点==
 
-![img](images/f30a4651605352db542b76b3512df110.png)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/f30a4651605352db542b76b3512df110.png)
 
 - **在下一次的拉取请求中，Follower副本这次请求拉取的是位移值=1的消息，此时Leader就知道follow前面的消息同步成功了。**
 
@@ -1882,7 +1882,7 @@ Kafka Broker会在内存中为每个分区都缓存Leader Epoch数据，同时�
 
 接下来，我们来看一个实际的例子，它展示的是Leader Epoch是如何防止数据丢失的。请先看下图。
 
-<img src="images/69f8ccf346b568a7310c69de9863ca42.png" alt="img" style="zoom: 50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/69f8ccf346b568a7310c69de9863ca42.png" alt="img" style="zoom: 50%;" />
 
 ==我稍微解释一下，单纯依赖高水位是怎么造成数据丢失的。==
 
@@ -1896,7 +1896,7 @@ Kafka Broker会在内存中为每个分区都缓存Leader Epoch数据，同时�
 
 现在，我们来看下如何利用Leader Epoch机制来规避这种数据丢失。我依然用图的方式来说明。
 
-<img src="images/1078956136267ca958d82bfa16d825e1.png" alt="img" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/1078956136267ca958d82bfa16d825e1.png" alt="img" style="zoom:50%;" />
 
 场景和之前大致是类似的，只不过引用Leader Epoch机制后，Follower副本B重启回来后，需要向A发送一个特殊的请求去获取Leader的LEO值。在这个例子中，该值为2。当获知到Leader LEO=2后，B发现该LEO值不比它自己的LEO值小，而且缓存中也没有保存任何起始位移值 > 2的Epoch条目，因此B无需执行任何日志截断操作。这是对高水位机制的一个明显改进，即副本是否执行日志截断不再依赖于高水位进行判断。
 
@@ -1906,7 +1906,7 @@ Kafka Broker会在内存中为每个分区都缓存Leader Epoch数据，同时�
 
 今天，我向你详细地介绍了Kafka的高水位机制以及Leader Epoch机制。高水位在界定Kafka消息对外可见性以及实现副本机制等方面起到了非常重要的作用，但其设计上的缺陷给Kafka留下了很多数据丢失或数据不一致的潜在风险。为此，社区引入了Leader Epoch机制，尝试规避掉这类风险。事实证明，它的效果不错，在0.11版本之后，关于副本数据不一致性方面的Bug的确减少了很多。如果你想深入学习Kafka的内部原理，今天的这些内容是非常值得你好好琢磨并熟练掌握的。
 
-<img src="images/989d13e4bc4f44618a10b5b7bd6f523f.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/989d13e4bc4f44618a10b5b7bd6f523f.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -2078,7 +2078,7 @@ bin/kafka-console-consumer.sh --bootstrap-server kafka_host:port --topic __consu
 
 
 
-<img src="images/22ef35547f9bddb8d56bdb350fd52f74.jpg" alt="img" style="zoom:25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/22ef35547f9bddb8d56bdb350fd52f74.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -2101,7 +2101,7 @@ bin/kafka-console-consumer.sh --bootstrap-server kafka_host:port --topic __consu
 
 下面的这张表格罗列了7种重设策略。接下来，我来详细解释下这些策略。
 
-![img](images/eb469122e5af2c9f6baebb173b56bed5.jpeg)
+![img](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/eb469122e5af2c9f6baebb173b56bed5.jpeg)
 
 
 
@@ -2284,7 +2284,7 @@ bin/kafka-consumer-groups.sh --bootstrap-server kafka-host:port --group test-gro
 
 ### 小结
 
-<img src="images/98a7d3f9b0d3050947772d8cd2c4caf3.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/98a7d3f9b0d3050947772d8cd2c4caf3.jpg" alt="img" style="zoom: 25%;" />
 
 
 
