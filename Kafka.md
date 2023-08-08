@@ -410,7 +410,7 @@ Consumer端丢失数据主要体现在Consumer端要消费的消息不见了。C
 
    
 
-   <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/3fc09aa33dc1022e867df4930054ce5a.jpg" alt="img" style="zoom:25%;" />
+   
 
 
 
@@ -923,11 +923,15 @@ Consumer实例增加的情况很好理解，当我们启动一个配置有相同
 
 因为Consumer能够同时消费多个分区的数据，==所以位移的提交实际上是在分区粒度上进行的==；
 
-==自动提交和手动提交==
+==自动提交和手动提交：==
 
-- 自动提交位移：每隔一段时间自动向Broker提交当前我的消费位移
+- 自动提交位移：每隔一段时间自动向Broker提交当前我的消费位移；
+
+  **可能发生消息还没有消费完的情况，旧提交了位移导致消息丢失**
 
   Consumer端有个参数enable.auto.commit，默认值就是true，即Java Consumer默认就是自动提交位移的。如果启用了自动提交，Consumer端还有个参数就派上用场了：auto.commit.interval.ms。它的默认值是5秒，表明Kafka每5秒会为你自动提交一次位移。
+
+  
 
 - 手动提交位移：自己要在代码中使用Kafka提供的API进行提交位移；
 
